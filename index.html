@@ -7,16 +7,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent!important}
-a,button,div,img{outline:none!important}
-img{-webkit-user-drag:none;user-select:none}
-html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:#070707;color:#fff;overflow-x:hidden;line-height:1.6}
 h1,h2,h3{font-family:'Bebas Neue',sans-serif;letter-spacing:1.2px}
 a{text-decoration:none;color:inherit}
 .container{max-width:1140px;margin:0 auto;padding:0 24px}
-section{padding:72px 0}
-
-/* ===== INTRO ===== */
+section{padding:62px 0}
 #intro{position:fixed;inset:0;z-index:9999;background:radial-gradient(circle at 50% 30%,#2a2200,#070707 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:.6s}
 #intro.hide{opacity:0;pointer-events:none;transform:scale(1.05)}
 #intro .mini{letter-spacing:5px;font-size:11px;color:#e8c400;font-weight:900}
@@ -25,66 +20,65 @@ section{padding:72px 0}
 #intro p{color:#ccc;max-width:420px}
 #intro .bar{width:200px;height:4px;background:#222;border-radius:99px;margin:24px 0;overflow:hidden}
 #intro .bar i{display:block;height:100%;width:0;background:#e8c400;transition:1.2s}
-.btn-entrar{background:#e8c400;color:#000;padding:18px 40px;border-radius:999px;font-weight:900;font-size:18px;margin-top:6px;cursor:pointer;border:none}
+.btn-entrar{background:#e8c400;color:#000;padding:18px 40px;border-radius:999px;font-weight:900;font-size:18px;cursor:pointer;border:none}
 .pular{margin-top:16px;color:#888;font-size:13px;cursor:pointer}
-
-/* TOPO */
 .topbar{background:#e8c400;color:#000;text-align:center;padding:11px 14px;font-weight:900;font-size:13px}
-header{position:sticky;top:0;z-index:100;background:rgba(7,7,7,.96);backdrop-filter:blur(14px);border-bottom:1px solid #1f1f1f}
+header{position:sticky;top:0;z-index:100;background:rgba(7,7,7,.96);border-bottom:1px solid #1f1f1f}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:16px}
 .logo{font-size:28px;color:#e8c400;line-height:.95}.logo span{color:#fff}.logo small{display:block;font-family:'Inter';font-size:9px;letter-spacing:4px;color:#999;margin-top:4px}
 .btn-top{background:#25D366;color:#fff;padding:12px 18px;border-radius:999px;font-weight:900;font-size:13px;white-space:nowrap}
-
-/* HERO */
 .hero{position:relative;display:flex;align-items:center;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.72) 55%,#070707),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=3840&auto=format&fit=crop') center/cover;padding:44px 0 0}
-.hero h1{font-size:clamp(54px,11vw,110px);line-height:.88}
-.hero h1 em{color:#e8c400;font-style:normal}
+.hero h1{font-size:clamp(54px,11vw,110px);line-height:.88}.hero h1 em{color:#e8c400;font-style:normal}
 .hero p{font-size:18px;color:#e8e8e8;max-width:640px;margin:20px 0 24px}
 .badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
 .badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:9px 13px;border-radius:999px;font-size:12px;font-weight:700}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-green{background:#25D366;color:#fff;padding:17px 28px;border-radius:999px;font-weight:900;font-size:16px;box-shadow:0 10px 28px rgba(37,211,102,.35);display:inline-block}
+.btn-green{background:#25D366;color:#fff;padding:17px 28px;border-radius:999px;font-weight:900;font-size:16px;display:inline-block}
 .btn-ghost{border:2px solid #e8c400;color:#e8c400;padding:15px 24px;border-radius:999px;font-weight:900;display:inline-block}
 .urgente{margin-top:20px;background:#ff2d2d;color:#fff;display:inline-block;padding:9px 15px;border-radius:999px;font-weight:800;font-size:13px}
-
-/* ===== SOCIAL MÉDIO + MEXENDO DE LEVE ===== */
 .hero-bottom{background:#0d0d0d;padding:20px 0 22px;border-bottom:1px solid #222}
 .social-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.social-card{border-radius:16px;padding:15px 16px;display:flex;align-items:center;gap:12px;text-align:left;animation:flutuar 2.8s ease-in-out infinite}
-.social-card:nth-child(2){animation-delay:0.4s}
+.social-card{border-radius:16px;padding:15px 16px;display:flex;align-items:center;gap:12px;animation:flutuar 2.8s ease-in-out infinite}
+.social-card:nth-child(2){animation-delay:.4s}
 @keyframes flutuar{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-.social-card b{font-size:15px;display:block;line-height:1.2}.social-card small{color:#fff;opacity:.9;font-size:12px;line-height:1.3}
-.social-card .ico{font-size:26px;line-height:1}
+.social-card b{font-size:15px;display:block;line-height:1.2}.social-card small{font-size:12px}
+.social-card .ico{font-size:26px}
 .sc-insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
 .sc-zap{background:#25D366}
-.marquee{overflow:hidden;white-space:nowrap;margin-top:16px;color:#e8c400;font-weight:900;letter-spacing:1px;font-size:13px}
+.marquee{overflow:hidden;white-space:nowrap;margin-top:16px;color:#e8c400;font-weight:900;font-size:13px}
 .marquee span{display:inline-block;animation:mq 22s linear infinite}
 @keyframes mq{to{transform:translateX(-50%)}}
-
 .prova{background:#111;border-bottom:1px solid #222;padding:26px 0}
 .prova-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
 .prova b{font-size:30px;color:#e8c400;display:block}.prova small{color:#aaa;font-size:12.5px}
 .sec-title{text-align:center;font-size:52px;line-height:1}.sec-title span{color:#e8c400}
 .sec-sub{text-align:center;color:#aaa;margin:12px 0 36px;font-size:15.5px}
+/* LEGENDA NUMERADA - NÃO CORTA NADA */
+.legenda{background:#0f0f0f;border:1px solid #2a2a2a;border-left:4px solid #e8c400;border-radius:0 14px 14px 0;padding:13px 16px;margin:14px 0 0;font-size:13.5px;line-height:1.5;color:#ddd}
+.legenda b{color:#e8c400}
+.num{display:inline-block;background:#e8c400;color:#000;font-weight:900;font-size:11px;padding:3px 8px;border-radius:99px;margin-right:6px}
 .simulador{background:#111;border:2px solid #e8c400;border-radius:26px;padding:30px}
 .sim-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;margin-top:20px}
 .opt{border:2px solid #2a2a2a;background:#181818;padding:18px;border-radius:18px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
 .opt.active{border-color:#e8c400;background:#262100}
-.opt b{font-size:16px}.opt small{display:block;color:#aaa;font-weight:400;font-size:13px}.opt span{color:#e8c400;font-weight:900;font-size:17px;white-space:nowrap}
+.opt b{font-size:16px}.opt small{display:block;color:#aaa;font-size:13px}.opt span{color:#e8c400;font-weight:900;font-size:17px;white-space:nowrap}
 .total-box{background:#e8c400;color:#000;border-radius:20px;padding:26px;text-align:center}
 .total-box .total{font-size:52px;font-weight:900;line-height:1;margin:8px 0}
 .total-box a{display:block;background:#000;color:#fff;margin-top:16px;padding:17px;border-radius:999px;font-weight:900;font-size:15px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .card{background:#151515;border:1px solid #282828;border-radius:22px;overflow:hidden}
 .card img{width:100%;height:240px;object-fit:cover;display:block}
-.card-body{padding:22px}.card-body h3{font-size:28px}.card-body p{color:#aaa;font-size:14px;margin:10px 0 16px;min-height:42px}
+.card-body{padding:22px}.card-body h3{font-size:28px}.card-body p{color:#aaa;font-size:14px;margin:10px 0 16px}
 .price{display:flex;justify-content:space-between;align-items:center;gap:10px}
 .price b{font-size:28px;color:#e8c400}
 .price a{background:#fff;color:#000;padding:11px 16px;border-radius:999px;font-weight:900;font-size:13px;white-space:nowrap}
 .combo{background:linear-gradient(135deg,#f5d100,#a67c00);color:#000;border-radius:24px;padding:26px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:20px}
 .combo h3{font-size:36px;line-height:1}.combo a{background:#000;color:#fff;padding:15px 24px;border-radius:999px;font-weight:900}
 .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gal figure{margin:0}
 .gal img{width:100%;height:250px;object-fit:cover;border-radius:16px;display:block}
+.gal figcaption{font-size:12.5px;color:#bbb;text-align:center;padding:8px 4px 0;line-height:1.5}
+.gal figcaption b{color:#e8c400}
 .avals-box{background:#151515;border:1px solid #282828;border-radius:22px;padding:30px;text-align:center;min-height:190px}
 .avals-box p{font-size:19px;line-height:1.6;margin:14px 0}
 .dots{display:flex;justify-content:center;gap:10px;margin-top:16px}.dot{width:12px;height:12px;border-radius:50%;background:#333;cursor:pointer;padding:6px}.dot.on{background:#e8c400}
@@ -103,21 +97,13 @@ header{position:sticky;top:0;z-index:100;background:rgba(7,7,7,.96);backdrop-fil
 .moises-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
 .btn-insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;padding:15px 24px;border-radius:999px;font-weight:900;font-size:15px;display:inline-block}
 .btn-zap2{background:#25D366;color:#fff;padding:15px 24px;border-radius:999px;font-weight:900;font-size:15px;display:inline-block}
-.float-wa{position:fixed;right:16px;bottom:16px;z-index:900;background:#25D366;color:#fff;padding:14px 18px;border-radius:999px;font-weight:900;box-shadow:0 10px 26px rgba(0,0,0,.55);font-size:14px}
 footer{text-align:center;padding:26px;color:#777;font-size:13px;line-height:1.7}
-@media(max-width:780px){section{padding:56px 0}.grid,.sim-grid{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.prova-grid{grid-template-columns:1fr 1fr}.hours{grid-template-columns:1fr}.logo{font-size:24px}.btn-top{padding:11px 14px;font-size:12px}.final h2{font-size:46px}.sec-title{font-size:42px}.gal img{height:190px}.social-row{grid-template-columns:1fr 1fr}.social-card{padding:13px 12px}.social-card b{font-size:13.5px}.social-card small{font-size:11px}.social-card .ico{font-size:22px}}
+@media(max-width:780px){section{padding:56px 0}.grid,.sim-grid{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.prova-grid{grid-template-columns:1fr 1fr}.hours{grid-template-columns:1fr}.logo{font-size:24px}.btn-top{padding:11px 14px;font-size:12px}.final h2{font-size:46px}.sec-title{font-size:42px}.gal img{height:190px}.social-card{padding:13px 12px}.social-card b{font-size:13.5px}.social-card small{font-size:11px}.social-card .ico{font-size:22px}}
 </style>
 </head>
 <body>
 
-<div id="intro">
-<div class="mini">✂️ RUA DOURADO • 180 • SÃO PAULO</div>
-<h1>BARBEARIA<br><span>ESTILO</span></h1>
-<p>Seu corte com cara de empresário. Degradê, barba e estilo em 45 minutos.</p>
-<div class="bar"><i id="introBar"></i></div>
-<button class="btn-entrar" onclick="entrar()">ENTRAR NO SITE →</button>
-<div class="pular" onclick="entrar()">Pular intro</div>
-</div>
+<div id="intro"><div class="mini">✂️ RUA DOURADO • 180 • SÃO PAULO</div><h1>BARBEARIA<br><span>ESTILO</span></h1><p>Seu corte com cara de empresário. Degradê, barba e estilo em 45 minutos.</p><div class="bar"><i id="introBar"></i></div><button class="btn-entrar" onclick="entrar()">ENTRAR NO SITE →</button><div class="pular" onclick="entrar()">Pular intro</div></div>
 
 <div class="topbar">🔥 HOJE TEM HORÁRIO LIVRE NA RUA DOURADO, 180 • AGENDE EM 1 MINUTO • SÓ 3 VAGAS HOJE</div>
 <header><div class="container nav"><div class="logo">BARBEARIA <span>ESTILO</span><small>RUA DOURADO • 180 • SÃO PAULO</small></div><a class="btn-top" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20meu%20corte!">📱 Agendar Agora</a></div></header>
@@ -128,6 +114,7 @@ footer{text-align:center;padding:26px;color:#777;font-size:13px;line-height:1.7}
 <p>Degradê na navalha, barba alinhada e atendimento de primeira. Você entra cliente e sai com presença.</p>
 <div class="btns"><a class="btn-green" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20meu%20corte!">📲 AGENDAR NO WHATSAPP</a><a class="btn-ghost" href="#simulador">MONTAR MEU COMBO ↓</a></div>
 <div class="urgente">⏰ ÚLTIMAS 3 VAGAS DE HOJE — Garanta a sua!</div>
+<div class="legenda"><span class="num">1</span><b>CAPA:</b> Seu corte com cara de empresário. Agende em 1 minuto no WhatsApp.</div>
 </div></div>
 
 <div class="hero-bottom"><div class="container">
@@ -149,8 +136,9 @@ footer{text-align:center;padding:26px;color:#777;font-size:13px;line-height:1.7}
 <div class="opt" data-price="15" onclick="toggle(this)"><div><b>👁️ Sobrancelha</b><small>Alinhada na navalha</small></div><span>R$ 15</span></div>
 <div class="opt" data-price="20" onclick="toggle(this)"><div><b>✨ Pigmentação</b><small>Cobertura perfeita</small></div><span>R$ 20</span></div>
 </div>
-<div class="total-box"><h3>SEU TOTAL É:</h3><div class="total" id="total">R$ 0</div><p id="escolhidos" style="font-weight:700;line-height:1.5">Nenhum serviço escolhido ainda</p><p style="font-size:13px;margin-top:10px">💰 Você economiza R$ <span id="desc">0</span> no combo</p><a id="linkWa" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar!">📲 AGENDAR ESSE COMBO →</a></div></div></div>
-</div></section>
+<div class="total-box"><h3>SEU TOTAL É:</h3><div class="total" id="total">R$ 0</div><p id="escolhidos" style="font-weight:700;line-height:1.5">Nenhum serviço escolhido ainda</p><p style="font-size:13px;margin-top:10px">💰 Você economiza R$ <span id="desc">0</span> no combo</p><a id="linkWa" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar!">📲 AGENDAR ESSE COMBO →</a></div></div>
+<div class="legenda"><span class="num">2</span><b>COMBO:</b> Monte seu combo, o preço já calcula sozinho. Toca e agenda!</div>
+</div></div></section>
 
 <section id="precos" style="padding-top:0"><div class="container">
 <h2 class="sec-title">CORTES & <span>PREÇOS</span></h2><p class="sec-sub">Preço fechado. Sem surpresa na hora de pagar.</p>
@@ -159,29 +147,36 @@ footer{text-align:center;padding:26px;color:#777;font-size:13px;line-height:1.7}
 <div class="card"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1600&auto=format&fit=crop"><div class="card-body"><h3>🔥 Degradê Navalhado</h3><p>O mais pedido da casa. Degradê perfeito + finalização.</p><div class="price"><b>R$ 40</b><a href="https://wa.me/5511986789954?text=Quero%20o%20Degrad%C3%AA">Agendar →</a></div></div></div>
 <div class="card"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1600&auto=format&fit=crop"><div class="card-body"><h3>🧔 Barba Terapia</h3><p>Toalha quente, navalha e óleo. Barba de respeito.</p><div class="price"><b>R$ 25</b><a href="https://wa.me/5511986789954?text=Quero%20a%20Barba">Agendar →</a></div></div></div>
 </div>
+<div class="legenda"><span class="num">3</span><b>CORTES 1:</b> Corte Social R$ 30. Clássico, limpo e alinhado.</div>
 <div class="combo"><div><h3>COMBO VIP: CORTE + BARBA</h3><p><b>De R$ 65 por R$ 60</b> • + Sobrancelha grátis hoje</p></div><a href="https://wa.me/5511986789954?text=Quero%20o%20COMBO%20VIP">QUERO O COMBO VIP →</a></div>
+<div class="legenda"><span class="num">4</span><b>CORTES 2:</b> Barba R$ 25 + Combo VIP R$ 60. O mais pedido da casa!</div>
 </div></section>
 
 <section style="padding-top:0"><div class="container"><h2 class="sec-title">TRABALHOS <span>REAIS</span></h2><p class="sec-sub">Sem filtro. É assim que tu vai sair daqui.</p>
 <div class="gal">
-<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop">
-<img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop">
-<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1200&auto=format&fit=crop">
-<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop">
+<figure><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop"><figcaption><b>5 - TRABALHOS:</b> Trabalhos reais, sem filtro.</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop"><figcaption><b>5 - BARBEARIA:</b> Estrutura top pra te atender.</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1200&auto=format&fit=crop"><figcaption><b>5 - NAVALHA:</b> Acabamento no detalhe.</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop"><figcaption><b>5 - ESTILO:</b> É assim que tu vai sair daqui.</figcaption></figure>
 </div></div></section>
 
 <section style="padding-top:0"><div class="container"><h2 class="sec-title">QUEM CORTOU, <span>APROVA</span></h2>
-<div class="avals-box"><div style="color:#e8c400;font-size:22px;letter-spacing:3px">⭐⭐⭐⭐⭐</div><p id="avalText">"Melhor degradê que já fizeram em mim. Não troco por nada!"</p><b id="avalName" style="color:#e8c400">— Matheus S. • Degradê</b><div class="dots"><div class="dot on" onclick="showAval(0)"></div><div class="dot" onclick="showAval(1)"></div><div class="dot" onclick="showAval(2)"></div></div></div></div></section>
+<div class="avals-box"><div style="color:#e8c400;font-size:22px;letter-spacing:3px">⭐⭐⭐⭐⭐</div><p id="avalText">"Melhor degradê que já fizeram em mim. Não troco por nada!"</p><b id="avalName" style="color:#e8c400">— Matheus S. • Degradê</b><div class="dots"><div class="dot on" onclick="showAval(0)"></div><div class="dot" onclick="showAval(1)"></div><div class="dot" onclick="showAval(2)"></div></div></div>
+<div class="legenda"><span class="num">5</span><b>AVALIAÇÕES:</b> Quem cortou, aprova. 4.9 estrelas no Google.</div>
+</div></section>
 
 <section style="padding-top:0"><div class="container"><h2 class="sec-title">PERGUNTAS <span>FREQUENTES</span></h2><p class="sec-sub">Toca na pergunta pra abrir 👇</p><div class="faq">
-<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Precisa agendar ou é só chegar? <span>+</span></div><div class="faq-a">Pode chegar, mas quem agenda no WhatsApp passa na frente e não espera! Clica no botão verde e garante seu horário.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Aceita Pix e cartão? <span>+</span></div><div class="faq-a">Sim! Pix, débito, crédito e dinheiro. Rápido e sem burocracia.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Quanto tempo demora o corte? <span>+</span></div><div class="faq-a">Em média 45 minutos. Corte + Barba em 1 hora tu já sai pronto pro rolê.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Onde fica? <span>+</span></div><div class="faq-a">Rua Dourado, 180 - São Paulo - SP. Pertinho do metrô, fácil de estacionar.</div></div>
-</div></div></section>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Precisa agendar ou é só chegar? <span>+</span></div><div class="faq-a">Pode chegar, mas quem agenda no WhatsApp passa na frente e não espera!</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Aceita Pix e cartão? <span>+</span></div><div class="faq-a">Sim! Pix, débito, crédito e dinheiro.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Quanto tempo demora o corte? <span>+</span></div><div class="faq-a">Em média 45 minutos. Corte + Barba em 1 hora tu já sai pronto.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Onde fica? <span>+</span></div><div class="faq-a">Rua Dourado, 180 - São Paulo - SP. Pertinho do metrô.</div></div>
+</div>
+<div class="legenda"><span class="num">6</span><b>DÚVIDAS:</b> Toca na pergunta e já tira sua dúvida. Aceita Pix e cartão!</div>
+</div></section>
 
 <div class="final"><h2>SEU HORÁRIO<br>ESTÁ TE ESPERANDO.</h2><p style="margin-top:14px;color:#ddd">Clica abaixo e garante seu corte de hoje. São só 2 cliques.</p><br><a class="btn-green" style="font-size:19px;padding:18px 32px" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20agora!">📲 QUERO AGENDAR AGORA</a>
-<div class="container"><div class="hours"><div><h3>📍 ONDE A GENTE ESTÁ</h3><p>Rua Dourado, 180 - São Paulo - SP<br>Perto do metrô • Fácil de estacionar</p><br><a href="https://www.google.com/maps/search/?api=1&query=Rua+Dourado+180+Sao+Paulo+SP" style="color:#e8c400;font-weight:900">→ COMO CHEGAR NO MAPS</a></div><div><h3>🕒 HORÁRIOS</h3><p>Seg a Sex: 9h às 20h<br>Sábado: 9h às 19h<br>Domingo: Fechado<br><br>📱 WhatsApp: (11) 98678-9954</p></div></div></div></div>
+<div class="container"><div class="legenda" style="text-align:left;margin-top:28px"><span class="num">7</span><b>AGENDAR:</b> Seu horário tá te esperando. São só 2 cliques pra agendar.</div>
+<div class="hours"><div><h3>📍 ONDE A GENTE ESTÁ</h3><p>Rua Dourado, 180 - São Paulo - SP<br>Perto do metrô • Fácil de estacionar</p><br><a href="https://www.google.com/maps/search/?api=1&query=Rua+Dourado+180+Sao+Paulo+SP" style="color:#e8c400;font-weight:900">→ COMO CHEGAR NO MAPS</a></div><div><h3>🕒 HORÁRIOS</h3><p>Seg a Sex: 9h às 20h<br>Sábado: 9h às 19h<br>Domingo: Fechado<br><br>📱 WhatsApp: (11) 98678-9954</p></div></div></div></div>
 
 <section class="moises"><div class="container"><div class="moises-box">
 <p style="color:#e8c400;font-weight:900;letter-spacing:2px;font-size:13px">✨ QUER UM SITE ASSIM PRA SUA EMPRESA?</p>
@@ -193,20 +188,16 @@ footer{text-align:center;padding:26px;color:#777;font-size:13px;line-height:1.7}
 <a class="btn-zap2" href="https://wa.me/5511986789954?text=Oi%20Mois%C3%A9s!%20Vi%20o%20site%20da%20barbearia%20e%20quero%20um%20site%20pra%20minha%20empresa!">💬 QUERO UM SITE ASSIM NO WHATSAPP</a>
 </div>
 <p style="color:#888;font-size:13px;margin-top:18px">Site por R$ 150 • Pronto amanhã • Só paga depois de aprovar</p>
+<div class="legenda" style="text-align:left"><span class="num">8</span><b>MOISÉS SITES:</b> Quer um site assim? Fala com @moises.sites. R$ 150, pronto amanhã!</div>
 </div></div></section>
 
-<a class="float-wa" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar!">💬 Agendar</a>
 <footer>© 2026 Barbearia Estilo • Rua Dourado, 180 - São Paulo<br>Site feito por <a href="https://instagram.com/moises.sites" style="color:#e8c400;font-weight:800">@moises.sites</a> • WhatsApp (11) 98678-9954</footer>
 
 <script>
 setTimeout(()=>{document.getElementById('introBar').style.width='100%'},100);
 function entrar(){document.getElementById('intro').classList.add('hide');setTimeout(()=>{document.getElementById('intro').style.display='none'},600);}
 setTimeout(entrar,5000);
-let avais=[
-{t:"Melhor degradê que já fizeram em mim. Não troco por nada!",n:"— Matheus S. • Degradê"},
-{t:"Agendei no WhatsApp em 1 minuto, cheguei e já cortaram. Top demais!",n:"— Gabriel R. • Corte Social"},
-{t:"Atendimento 10/10, barba ficou perfeita. Virei cliente fixo.",n:"— Lucas P. • Barba Terapia"}
-];
+let avais=[{t:"Melhor degradê que já fizeram em mim. Não troco por nada!",n:"— Matheus S. • Degradê"},{t:"Agendei no WhatsApp em 1 minuto, cheguei e já cortaram. Top demais!",n:"— Gabriel R. • Corte Social"},{t:"Atendimento 10/10, barba ficou perfeita. Virei cliente fixo.",n:"— Lucas P. • Barba Terapia"}];
 let ai=0;
 function showAval(i){ai=i;document.getElementById('avalText').innerText='"'+avais[i].t+'"';document.getElementById('avalName').innerText=avais[i].n;document.querySelectorAll('.dot').forEach((d,idx)=>d.classList.toggle('on',idx===i));}
 setInterval(()=>{showAval((ai+1)%3)},4500);
