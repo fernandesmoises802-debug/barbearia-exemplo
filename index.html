@@ -6,51 +6,50 @@
 <title>BARBEARIA ESTILO — Rua Dourado, 180</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-/* ===== COR BONITA FINAL - VERDE PINHEIRO + DOURADO - SEM PRETO, SEM CREME ===== */
+/* ===== VOLTA AO ORIGINAL - PRETO + AMARELO FORTE - O QUE TU GOSTOU ===== */
 :root{
---fundo:#12211B;
---fundo2:#0E1A15;
---card:#1B2F26;
---card2:#22392E;
---borda:#33493D;
---dourado:#D4AF6A;
---dourado2:#E8C87E;
---creme:#F5F0E6;
---cinza:#B8C4BC;
---vinho:#8B2323;
+--preto:#0A0A0A;
+--preto2:#111111;
+--card:#171717;
+--borda:#262626;
+--amarelo:#FFC800;
+--amarelo2:#FFD93D;
+--branco:#FFFFFF;
+--cinza:#A8A8A8;
+--vinho:#B42318;
 --zap:#25D366;
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent!important}
-body{font-family:'Inter',sans-serif;background:var(--fundo);color:var(--creme);overflow-x:hidden;line-height:1.6}
+body{font-family:'Inter',sans-serif;background:var(--preto);color:var(--branco);overflow-x:hidden;line-height:1.6}
 h1,h2,h3{font-family:'Bebas Neue',sans-serif;letter-spacing:1.2px}
 a{text-decoration:none;color:inherit}
 .container{max-width:1140px;margin:0 auto;padding:0 20px}
 section{padding:60px 0}
-#intro{position:fixed;inset:0;z-index:9999;background:radial-gradient(circle at 50% 30%,#1E3A2C,var(--fundo) 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:.6s}
+#intro{position:fixed;inset:0;z-index:9999;background:radial-gradient(circle at 50% 30%,#2A2200,var(--preto) 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:.6s}
 #intro.hide{opacity:0;pointer-events:none;transform:scale(1.05)}
-#intro .mini{letter-spacing:5px;font-size:11px;color:var(--dourado);font-weight:900}
-#intro h1{font-size:clamp(60px,14vw,110px);line-height:.9;margin:14px 0;color:var(--creme)}
-#intro h1 span{color:var(--dourado)}
-#intro p{color:#D6DDD8;max-width:420px}
-#intro .bar{width:200px;height:4px;background:var(--borda);border-radius:99px;margin:24px 0;overflow:hidden}
-#intro .bar i{display:block;height:100%;width:0;background:var(--dourado);transition:1.2s}
-.btn-entrar{background:var(--dourado);color:#12211B;padding:18px 40px;border-radius:999px;font-weight:900;font-size:18px;cursor:pointer;border:none}
+#intro .mini{letter-spacing:5px;font-size:11px;color:var(--amarelo);font-weight:900}
+#intro h1{font-size:clamp(60px,14vw,110px);line-height:.9;margin:14px 0;color:#fff}
+#intro h1 span{color:var(--amarelo)}
+#intro p{color:#CCC;max-width:420px}
+#intro .bar{width:200px;height:4px;background:#333;border-radius:99px;margin:24px 0;overflow:hidden}
+#intro .bar i{display:block;height:100%;width:0;background:var(--amarelo);transition:1.2s}
+.btn-entrar{background:var(--amarelo);color:#000;padding:18px 40px;border-radius:999px;font-weight:900;font-size:18px;cursor:pointer;border:none}
 .pular{margin-top:16px;color:#888;font-size:13px;cursor:pointer}
-.topbar{background:var(--dourado);color:#12211B;text-align:center;padding:11px 12px;font-weight:900;font-size:12.5px;line-height:1.4}
-header{position:sticky;top:0;z-index:100;background:rgba(18,33,27,.97);border-bottom:1px solid var(--borda)}
+.topbar{background:var(--amarelo);color:#000;text-align:center;padding:11px 12px;font-weight:900;font-size:12.5px;line-height:1.4}
+header{position:sticky;top:0;z-index:100;background:rgba(10,10,10,.96);border-bottom:1px solid var(--borda)}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:10px}
-.logo{font-size:22px;color:var(--dourado);line-height:.95;white-space:nowrap}.logo span{color:var(--creme)}.logo small{display:block;font-family:'Inter';font-size:8.5px;letter-spacing:2.5px;color:#9AA8A0;margin-top:4px}
+.logo{font-size:22px;color:var(--amarelo);line-height:.95;white-space:nowrap}.logo span{color:#fff}.logo small{display:block;font-family:'Inter';font-size:8.5px;letter-spacing:2.5px;color:#999;margin-top:4px}
 .btn-top{background:var(--zap);color:#fff;padding:11px 14px;border-radius:999px;font-weight:900;font-size:12px;white-space:nowrap;flex-shrink:0}
-.hero{position:relative;display:flex;align-items:center;background:linear-gradient(180deg,rgba(18,33,27,.25),rgba(18,33,27,.65) 55%,var(--fundo)),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=3840&auto=format&fit=crop') center/cover;padding:36px 0 0}
-.hero h1{font-size:clamp(48px,11vw,110px);line-height:.88;color:#fff;text-shadow:0 4px 20px rgba(0,0,0,.5)}.hero h1 em{color:var(--dourado);font-style:normal}
-.hero p{font-size:17px;color:#EDE8DD;max-width:640px;margin:20px 0 24px;font-weight:500}
+.hero{position:relative;display:flex;align-items:center;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.65) 55%,var(--preto)),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=3840&auto=format&fit=crop') center/cover;padding:36px 0 0}
+.hero h1{font-size:clamp(48px,11vw,110px);line-height:.88;color:#fff}.hero h1 em{color:var(--amarelo);font-style:normal}
+.hero p{font-size:17px;color:#E8E8E8;max-width:640px;margin:20px 0 24px}
 .badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
-.badge{background:rgba(255,255,255,.12);border:1px solid rgba(212,175,106,.5);padding:9px 13px;border-radius:999px;font-size:12px;font-weight:700;color:#fff;backdrop-filter:blur(4px)}
+.badge{background:rgba(255,255,255,.08);border:1px solid rgba(255,200,0,.4);padding:9px 13px;border-radius:999px;font-size:12px;font-weight:700;color:#fff}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-green{background:var(--zap);color:#fff;padding:17px 26px;border-radius:999px;font-weight:900;font-size:15.5px;display:inline-block;box-shadow:0 8px 20px rgba(37,211,102,.35)}
-.btn-ghost{border:2px solid var(--dourado);color:var(--dourado);padding:15px 22px;border-radius:999px;font-weight:900;display:inline-block;background:rgba(0,0,0,.25)}
+.btn-green{background:var(--zap);color:#fff;padding:17px 26px;border-radius:999px;font-weight:900;font-size:15.5px;display:inline-block}
+.btn-ghost{border:2px solid var(--amarelo);color:var(--amarelo);padding:15px 22px;border-radius:999px;font-weight:900;display:inline-block}
 .urgente{margin-top:20px;background:var(--vinho);color:#fff;display:inline-block;padding:9px 14px;border-radius:999px;font-weight:800;font-size:12.5px}
-.hero-bottom{background:var(--fundo2);padding:20px 0 18px;border-bottom:1px solid var(--borda)}
+.hero-bottom{background:#0D0D0D;padding:20px 0 18px;border-bottom:1px solid var(--borda)}
 .social-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .social-card{border-radius:16px;padding:14px 12px;display:flex;align-items:center;gap:10px;animation:flutuar 2.8s ease-in-out infinite;min-width:0}
 .social-card:nth-child(2){animation-delay:.4s}
@@ -59,58 +58,58 @@ header{position:sticky;top:0;z-index:100;background:rgba(18,33,27,.97);border-bo
 .social-card .ico{font-size:22px;flex-shrink:0}
 .sc-insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
 .sc-zap{background:var(--zap)}
-.marquee{overflow:hidden;white-space:nowrap;margin-top:14px;color:var(--dourado);font-weight:900;font-size:12.5px;padding:0 2px}
+.marquee{overflow:hidden;white-space:nowrap;margin-top:14px;color:var(--amarelo);font-weight:900;font-size:12.5px;padding:0 2px}
 .marquee span{display:inline-block;animation:mq 22s linear infinite;will-change:transform}
 @keyframes mq{to{transform:translateX(-50%)}}
-.prova{background:var(--fundo2);border-bottom:1px solid var(--borda);padding:24px 0}
+.prova{background:#111;border-bottom:1px solid var(--borda);padding:24px 0}
 .prova-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
-.prova b{font-size:28px;color:var(--dourado);display:block}.prova small{color:var(--cinza);font-size:12px}
-.sec-title{text-align:center;font-size:48px;line-height:1;color:var(--creme)}.sec-title span{color:var(--dourado)}
+.prova b{font-size:28px;color:var(--amarelo);display:block}.prova small{color:var(--cinza);font-size:12px}
+.sec-title{text-align:center;font-size:48px;line-height:1;color:#fff}.sec-title span{color:var(--amarelo)}
 .sec-sub{text-align:center;color:var(--cinza);margin:12px 0 32px;font-size:15px}
-.legenda{background:#0E1A15;border:1px solid var(--borda);border-left:4px solid var(--dourado);border-radius:0 14px 14px 0;padding:12px 14px;margin:14px 0 0;font-size:13px;line-height:1.5;color:#DDD8CB}
-.legenda b{color:var(--dourado)}
-.num{display:inline-block;background:var(--dourado);color:#12211B;font-weight:900;font-size:11px;padding:3px 8px;border-radius:99px;margin-right:6px}
-.simulador{background:var(--card);border:2px solid var(--dourado);border-radius:24px;padding:26px 18px}
+.legenda{background:#121212;border:1px solid var(--borda);border-left:4px solid var(--amarelo);border-radius:0 14px 14px 0;padding:12px 14px;margin:14px 0 0;font-size:13px;line-height:1.5;color:#DDD}
+.legenda b{color:var(--amarelo)}
+.num{display:inline-block;background:var(--amarelo);color:#000;font-weight:900;font-size:11px;padding:3px 8px;border-radius:99px;margin-right:6px}
+.simulador{background:var(--preto2);border:2px solid var(--amarelo);border-radius:24px;padding:26px 18px}
 .sim-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;margin-top:18px}
-.opt{border:2px solid var(--borda);background:#16281F;padding:16px;border-radius:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
-.opt.active{border-color:var(--dourado);background:#2A4030}
-.opt b{font-size:15.5px;color:var(--creme)}.opt small{display:block;color:var(--cinza);font-size:13px}.opt span{color:var(--dourado);font-weight:900;font-size:16px;white-space:nowrap}
-.total-box{background:var(--dourado);color:#12211B;border-radius:18px;padding:24px 16px;text-align:center}
+.opt{border:2px solid var(--borda);background:#1A1A1A;padding:16px;border-radius:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.opt.active{border-color:var(--amarelo);background:#2A2500}
+.opt b{font-size:15.5px;color:#fff}.opt small{display:block;color:var(--cinza);font-size:13px}.opt span{color:var(--amarelo);font-weight:900;font-size:16px;white-space:nowrap}
+.total-box{background:var(--amarelo);color:#000;border-radius:18px;padding:24px 16px;text-align:center}
 .total-box .total{font-size:48px;font-weight:900;line-height:1;margin:8px 0}
-.total-box a{display:block;background:#12211B;color:#fff;margin-top:14px;padding:16px 10px;border-radius:999px;font-weight:900;font-size:14px}
+.total-box a{display:block;background:#000;color:#fff;margin-top:14px;padding:16px 10px;border-radius:999px;font-weight:900;font-size:14px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--card);border:1px solid var(--borda);border-radius:20px;overflow:hidden}
 .card img{width:100%;height:230px;object-fit:cover;display:block}
-.card-body{padding:20px}.card-body h3{font-size:26px;color:var(--creme)}.card-body p{color:var(--cinza);font-size:14px;margin:10px 0 14px}
+.card-body{padding:20px}.card-body h3{font-size:26px;color:#fff}.card-body p{color:var(--cinza);font-size:14px;margin:10px 0 14px}
 .price{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.price b{font-size:26px;color:var(--dourado)}
-.price a{background:var(--creme);color:#12211B;padding:11px 14px;border-radius:999px;font-weight:900;font-size:12.5px;white-space:nowrap}
-.combo{background:linear-gradient(135deg,var(--dourado2),var(--dourado));color:#12211B;border-radius:22px;padding:24px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}
-.combo h3{font-size:32px;line-height:1}.combo a{background:#12211B;color:#fff;padding:14px 20px;border-radius:999px;font-weight:900;font-size:14px}
+.price b{font-size:26px;color:var(--amarelo)}
+.price a{background:#fff;color:#000;padding:11px 14px;border-radius:999px;font-weight:900;font-size:12.5px;white-space:nowrap}
+.combo{background:linear-gradient(135deg,var(--amarelo2),var(--amarelo));color:#000;border-radius:22px;padding:24px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}
+.combo h3{font-size:32px;line-height:1}.combo a{background:#000;color:#fff;padding:14px 20px;border-radius:999px;font-weight:900;font-size:14px}
 .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .gal figure{margin:0}
 .gal img{width:100%;height:230px;object-fit:cover;border-radius:14px;display:block}
-.gal figcaption{font-size:12px;color:var(--cinza);text-align:center;padding:8px 2px 0;line-height:1.4}
-.gal figcaption b{color:var(--dourado)}
+.gal figcaption{font-size:12px;color:#BBB;text-align:center;padding:8px 2px 0;line-height:1.4}
+.gal figcaption b{color:var(--amarelo)}
 .avals-box{background:var(--card);border:1px solid var(--borda);border-radius:20px;padding:28px 18px;text-align:center;min-height:180px}
-.avals-box p{font-size:18px;line-height:1.6;margin:14px 0;color:var(--creme)}
-.dots{display:flex;justify-content:center;gap:10px;margin-top:14px}.dot{width:12px;height:12px;border-radius:50%;background:var(--borda);cursor:pointer;padding:6px}.dot.on{background:var(--dourado)}
+.avals-box p{font-size:18px;line-height:1.6;margin:14px 0;color:#fff}
+.dots{display:flex;justify-content:center;gap:10px;margin-top:14px}.dot{width:12px;height:12px;border-radius:50%;background:#333;cursor:pointer;padding:6px}.dot.on{background:var(--amarelo)}
 .faq{max-width:780px;margin:0 auto}
 .faq-item{background:var(--card);border:1px solid var(--borda);border-radius:14px;margin-bottom:10px;overflow:hidden}
-.faq-q{padding:16px 18px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:15px;gap:10px;color:var(--creme)}
+.faq-q{padding:16px 18px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:15px;gap:10px;color:#fff}
 .faq-a{display:none;padding:0 18px 16px;color:var(--cinza);font-size:14px;line-height:1.6}
-.faq-item.open .faq-a{display:block}.faq-item.open{border-color:var(--dourado)}
-.final{background:linear-gradient(rgba(18,33,27,.75),rgba(18,33,27,.85)),url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=3840&auto=format&fit=crop') center/cover;text-align:center;padding:70px 18px}
+.faq-item.open .faq-a{display:block}.faq-item.open{border-color:var(--amarelo)}
+.final{background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=3840&auto=format&fit=crop') center/cover;text-align:center;padding:70px 18px}
 .final h2{font-size:52px;line-height:.95;color:#fff}
-.hours{background:var(--card);border:1px solid var(--borda);border-radius:18px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px;text-align:left}
-.hours h3{font-size:20px;margin-bottom:8px;color:var(--creme)}.hours p{color:#D6DDD8;line-height:1.8}
-.moises{background:var(--fundo2);border-top:1px solid var(--borda);text-align:center}
-.moises-box{background:var(--card);border:2px solid var(--dourado);border-radius:24px;padding:28px 18px;max-width:700px;margin:0 auto}
-.moises-box h2{font-size:40px;line-height:1;color:var(--creme)}.moises-box h2 span{color:var(--dourado)}
+.hours{background:#111;border:1px solid var(--borda);border-radius:18px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px;text-align:left}
+.hours h3{font-size:20px;margin-bottom:8px;color:#fff}.hours p{color:#CCC;line-height:1.8}
+.moises{background:#0A0A0A;border-top:1px solid var(--borda);text-align:center}
+.moises-box{background:var(--card);border:2px solid var(--amarelo);border-radius:24px;padding:28px 18px;max-width:700px;margin:0 auto}
+.moises-box h2{font-size:40px;line-height:1;color:#fff}.moises-box h2 span{color:var(--amarelo)}
 .moises-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
 .btn-insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;padding:14px 18px;border-radius:999px;font-weight:900;font-size:13.5px;display:inline-block}
 .btn-zap2{background:var(--zap);color:#fff;padding:14px 18px;border-radius:999px;font-weight:900;font-size:13.5px;display:inline-block}
-footer{text-align:center;padding:24px 14px;color:#8A9A90;font-size:12.5px;line-height:1.7}
+footer{text-align:center;padding:24px 14px;color:#777;font-size:12.5px;line-height:1.7}
 @media(max-width:780px){section{padding:52px 0}.grid,.sim-grid{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.prova-grid{grid-template-columns:1fr 1fr}.hours{grid-template-columns:1fr}.final h2{font-size:42px}.sec-title{font-size:40px}.gal img{height:180px}}
 </style>
 </head>
@@ -165,7 +164,7 @@ footer{text-align:center;padding:24px 14px;color:#8A9A90;font-size:12.5px;line-h
 <figure><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop"><figcaption><b>5 - ESTILO:</b> É assim que tu vai sair daqui.</figcaption></figure>
 </div></div></section>
 <section style="padding-top:0"><div class="container"><h2 class="sec-title">QUEM CORTOU, <span>APROVA</span></h2>
-<div class="avals-box"><div style="color:var(--dourado);font-size:22px;letter-spacing:3px">⭐⭐⭐⭐⭐</div><p id="avalText">"Melhor degradê que já fizeram em mim. Não troco por nada!"</p><b id="avalName" style="color:var(--dourado)">— Matheus S. • Degradê</b><div class="dots"><div class="dot on" onclick="showAval(0)"></div><div class="dot" onclick="showAval(1)"></div><div class="dot" onclick="showAval(2)"></div></div></div>
+<div class="avals-box"><div style="color:var(--amarelo);font-size:22px;letter-spacing:3px">⭐⭐⭐⭐⭐</div><p id="avalText">"Melhor degradê que já fizeram em mim. Não troco por nada!"</p><b id="avalName" style="color:var(--amarelo)">— Matheus S. • Degradê</b><div class="dots"><div class="dot on" onclick="showAval(0)"></div><div class="dot" onclick="showAval(1)"></div><div class="dot" onclick="showAval(2)"></div></div></div>
 <div class="legenda"><span class="num">5</span><b>AVALIAÇÕES:</b> Quem cortou, aprova. 4.9 estrelas no Google.</div>
 </div></section>
 <section style="padding-top:0"><div class="container"><h2 class="sec-title">PERGUNTAS <span>FREQUENTES</span></h2><p class="sec-sub">Toca na pergunta pra abrir 👇</p><div class="faq">
@@ -176,22 +175,22 @@ footer{text-align:center;padding:24px 14px;color:#8A9A90;font-size:12.5px;line-h
 </div>
 <div class="legenda"><span class="num">6</span><b>DÚVIDAS:</b> Toca na pergunta e já tira sua dúvida. Aceita Pix e cartão!</div>
 </div></section>
-<div class="final"><h2>SEU HORÁRIO<br>ESTÁ TE ESPERANDO.</h2><p style="margin-top:14px;color:#EDE8DD;font-weight:600">Clica abaixo e garante seu corte de hoje. São só 2 cliques.</p><br><a class="btn-green" style="font-size:18px;padding:18px 30px" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20agora!">📲 QUERO AGENDAR AGORA</a>
+<div class="final"><h2>SEU HORÁRIO<br>ESTÁ TE ESPERANDO.</h2><p style="margin-top:14px;color:#ddd">Clica abaixo e garante seu corte de hoje. São só 2 cliques.</p><br><a class="btn-green" style="font-size:18px;padding:18px 30px" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20agora!">📲 QUERO AGENDAR AGORA</a>
 <div class="container"><div class="legenda" style="text-align:left;margin-top:28px"><span class="num">7</span><b>AGENDAR:</b> Seu horário tá te esperando. São só 2 cliques pra agendar.</div>
-<div class="hours"><div><h3>📍 ONDE A GENTE ESTÁ</h3><p>Rua Dourado, 180 - São Paulo - SP<br>Perto do metrô • Fácil de estacionar</p><br><a href="https://www.google.com/maps/search/?api=1&query=Rua+Dourado+180+Sao+Paulo+SP" style="color:var(--dourado);font-weight:900">→ COMO CHEGAR NO MAPS</a></div><div><h3>🕒 HORÁRIOS</h3><p>Seg a Sex: 9h às 20h<br>Sábado: 9h às 19h<br>Domingo: Fechado<br><br>📱 WhatsApp: (11) 98678-9954</p></div></div></div></div>
+<div class="hours"><div><h3>📍 ONDE A GENTE ESTÁ</h3><p>Rua Dourado, 180 - São Paulo - SP<br>Perto do metrô • Fácil de estacionar</p><br><a href="https://www.google.com/maps/search/?api=1&query=Rua+Dourado+180+Sao+Paulo+SP" style="color:var(--amarelo);font-weight:900">→ COMO CHEGAR NO MAPS</a></div><div><h3>🕒 HORÁRIOS</h3><p>Seg a Sex: 9h às 20h<br>Sábado: 9h às 19h<br>Domingo: Fechado<br><br>📱 WhatsApp: (11) 98678-9954</p></div></div></div></div>
 <section class="moises"><div class="container"><div class="moises-box">
-<p style="color:var(--dourado);font-weight:900;letter-spacing:2px;font-size:13px">✨ QUER UM SITE ASSIM PRA SUA EMPRESA?</p>
+<p style="color:var(--amarelo);font-weight:900;letter-spacing:2px;font-size:13px">✨ QUER UM SITE ASSIM PRA SUA EMPRESA?</p>
 <h2 style="margin-top:10px">FEITO POR <span>MOISÉS SITES</span></h2>
-<p style="color:#C5D0C9;margin-top:14px">Se você tem barbearia, salão, loja ou qualquer negócio e quer um site que vende 24h por dia igual esse, fala comigo!</p>
+<p style="color:#ccc;margin-top:14px">Se você tem barbearia, salão, loja ou qualquer negócio e quer um site que vende 24h por dia igual esse, fala comigo!</p>
 <p style="margin-top:10px;font-weight:800">📱 (11) 98678-9954 • @moises.sites</p>
 <div class="moises-btns">
 <a class="btn-insta" href="https://instagram.com/moises.sites" target="_blank">📸 SEGUIR NO INSTAGRAM @moises.sites</a>
 <a class="btn-zap2" href="https://wa.me/5511986789954?text=Oi%20Mois%C3%A9s!%20Vi%20o%20site%20da%20barbearia%20e%20quero%20um%20site%20pra%20minha%20empresa!">💬 QUERO UM SITE ASSIM NO WHATSAPP</a>
 </div>
-<p style="color:#8A9A90;font-size:13px;margin-top:18px">Site por R$ 150 • Pronto amanhã • Só paga depois de aprovar</p>
+<p style="color:#888;font-size:13px;margin-top:18px">Site por R$ 150 • Pronto amanhã • Só paga depois de aprovar</p>
 <div class="legenda" style="text-align:left"><span class="num">8</span><b>MOISÉS SITES:</b> Quer um site assim? Fala com @moises.sites. R$ 150, pronto amanhã!</div>
 </div></div></section>
-<footer>© 2026 Barbearia Estilo • Rua Dourado, 180 - São Paulo<br>Site feito por <a href="https://instagram.com/moises.sites" style="color:var(--dourado);font-weight:800">@moises.sites</a> • WhatsApp (11) 98678-9954</footer>
+<footer>© 2026 Barbearia Estilo • Rua Dourado, 180 - São Paulo<br>Site feito por <a href="https://instagram.com/moises.sites" style="color:var(--amarelo);font-weight:800">@moises.sites</a> • WhatsApp (11) 98678-9954</footer>
 <script>
 setTimeout(()=>{document.getElementById('introBar').style.width='100%'},100);
 function entrar(){document.getElementById('intro').classList.add('hide');setTimeout(()=>{document.getElementById('intro').style.display='none'},600);}
@@ -203,4 +202,4 @@ setInterval(()=>{showAval((ai+1)%3)},4500);
 function toggle(el){el.classList.toggle('active');let total=0;let nomes=[];document.querySelectorAll('.opt.active').forEach(o=>{total+=parseInt(o.dataset.price);nomes.push(o.querySelector('b').innerText)});let desconto=nomes.length>=2?10:0;let final=Math.max(0,total-desconto);document.getElementById('total').innerText='R$ '+final;document.getElementById('desc').innerText=desconto;document.getElementById('escolhidos').innerText=nomes.length?nomes.join(' + '):'Nenhum serviço escolhido ainda';document.getElementById('linkWa').href='https://wa.me/5511986789954?text='+encodeURIComponent('Oi! Quero agendar: '+nomes.join(' + ')+' - Total R$ '+final);}
 </script>
 </body>
-</html>
+  </html>
