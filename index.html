@@ -14,7 +14,7 @@ body{font-family:'Inter',sans-serif;background:#070707;color:#fff;overflow-x:hid
 h1,h2,h3{font-family:'Bebas Neue',sans-serif;letter-spacing:1.2px}
 a{text-decoration:none;color:inherit}
 .container{max-width:1140px;margin:0 auto;padding:0 24px}
-section{padding:84px 0}
+section{padding:72px 0}
 
 /* ===== INTRO ===== */
 #intro{position:fixed;inset:0;z-index:9999;background:radial-gradient(circle at 50% 30%,#2a2200,#070707 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:.6s}
@@ -26,93 +26,90 @@ section{padding:84px 0}
 #intro .bar{width:200px;height:4px;background:#222;border-radius:99px;margin:24px 0;overflow:hidden}
 #intro .bar i{display:block;height:100%;width:0;background:#e8c400;transition:1.2s}
 .btn-entrar{background:#e8c400;color:#000;padding:18px 40px;border-radius:999px;font-weight:900;font-size:18px;margin-top:6px;cursor:pointer;border:none}
-.btn-entrar:active{transform:scale(.97)}
 .pular{margin-top:16px;color:#888;font-size:13px;cursor:pointer}
 
 /* TOPO */
 .topbar{background:#e8c400;color:#000;text-align:center;padding:11px 14px;font-weight:900;font-size:13px}
 header{position:sticky;top:0;z-index:100;background:rgba(7,7,7,.96);backdrop-filter:blur(14px);border-bottom:1px solid #1f1f1f}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:16px}
-.logo{font-size:30px;color:#e8c400;line-height:.95}.logo span{color:#fff}.logo small{display:block;font-family:'Inter';font-size:9px;letter-spacing:4px;color:#999;margin-top:4px}
-.btn-top{background:#25D366;color:#fff;padding:13px 20px;border-radius:999px;font-weight:900;font-size:13px;white-space:nowrap}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:16px}
+.logo{font-size:28px;color:#e8c400;line-height:.95}.logo span{color:#fff}.logo small{display:block;font-family:'Inter';font-size:9px;letter-spacing:4px;color:#999;margin-top:4px}
+.btn-top{background:#25D366;color:#fff;padding:12px 18px;border-radius:999px;font-weight:900;font-size:13px;white-space:nowrap}
 
 /* HERO */
-.hero{position:relative;display:flex;align-items:center;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.72) 55%,#070707),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=3840&auto=format&fit=crop') center/cover;padding:50px 0 0}
-.hero h1{font-size:clamp(58px,11vw,124px);line-height:.88}
+.hero{position:relative;display:flex;align-items:center;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.72) 55%,#070707),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=3840&auto=format&fit=crop') center/cover;padding:44px 0 0}
+.hero h1{font-size:clamp(54px,11vw,110px);line-height:.88}
 .hero h1 em{color:#e8c400;font-style:normal}
-.hero p{font-size:19px;color:#e8e8e8;max-width:640px;margin:22px 0 28px}
-.badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
-.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:10px 15px;border-radius:999px;font-size:12.5px;font-weight:700}
-.btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn-green{background:#25D366;color:#fff;padding:19px 30px;border-radius:999px;font-weight:900;font-size:17px;box-shadow:0 12px 32px rgba(37,211,102,.35);display:inline-block}
-.btn-ghost{border:2px solid #e8c400;color:#e8c400;padding:17px 26px;border-radius:999px;font-weight:900;display:inline-block}
-.urgente{margin-top:22px;background:#ff2d2d;color:#fff;display:inline-block;padding:10px 16px;border-radius:999px;font-weight:800;font-size:13px}
+.hero p{font-size:18px;color:#e8e8e8;max-width:640px;margin:20px 0 24px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:9px 13px;border-radius:999px;font-size:12px;font-weight:700}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-green{background:#25D366;color:#fff;padding:17px 28px;border-radius:999px;font-weight:900;font-size:16px;box-shadow:0 10px 28px rgba(37,211,102,.35);display:inline-block}
+.btn-ghost{border:2px solid #e8c400;color:#e8c400;padding:15px 24px;border-radius:999px;font-weight:900;display:inline-block}
+.urgente{margin-top:20px;background:#ff2d2d;color:#fff;display:inline-block;padding:9px 15px;border-radius:999px;font-weight:800;font-size:13px}
 
-/* ===== FIM DO PRETO - SOCIAL + CUPOM ===== */
-.hero-bottom{background:linear-gradient(180deg,#070707,#111);padding:26px 0 34px;border-bottom:1px solid #222}
-.social-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.social-card{border-radius:20px;padding:20px;display:flex;align-items:center;gap:14px;text-align:left}
-.social-card b{font-size:18px;display:block}.social-card small{color:#eee;opacity:.9}
+/* ===== SOCIAL MÉDIO + MEXENDO DE LEVE ===== */
+.hero-bottom{background:#0d0d0d;padding:20px 0 22px;border-bottom:1px solid #222}
+.social-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.social-card{border-radius:16px;padding:15px 16px;display:flex;align-items:center;gap:12px;text-align:left;animation:flutuar 2.8s ease-in-out infinite}
+.social-card:nth-child(2){animation-delay:0.4s}
+@keyframes flutuar{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.social-card b{font-size:15px;display:block;line-height:1.2}.social-card small{color:#fff;opacity:.9;font-size:12px;line-height:1.3}
+.social-card .ico{font-size:26px;line-height:1}
 .sc-insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
 .sc-zap{background:#25D366}
-.cupom{margin-top:16px;background:#1a1a1a;border:2px dashed #e8c400;border-radius:20px;padding:20px;text-align:center}
-.cupom button{background:#e8c400;color:#000;border:none;padding:14px 24px;border-radius:999px;font-weight:900;font-size:15px;cursor:pointer}
-#cupomCode{display:none;margin-top:14px}
-#cupomCode b{font-size:30px;color:#e8c400;letter-spacing:3px}
-.marquee{overflow:hidden;white-space:nowrap;margin-top:18px;color:#e8c400;font-weight:900;letter-spacing:1px}
-.marquee span{display:inline-block;animation:mq 18s linear infinite}
+.marquee{overflow:hidden;white-space:nowrap;margin-top:16px;color:#e8c400;font-weight:900;letter-spacing:1px;font-size:13px}
+.marquee span{display:inline-block;animation:mq 22s linear infinite}
 @keyframes mq{to{transform:translateX(-50%)}}
 
-.prova{background:#111;border-bottom:1px solid #222;padding:30px 0}
-.prova-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
-.prova b{font-size:32px;color:#e8c400;display:block}.prova small{color:#aaa;font-size:13px}
-.sec-title{text-align:center;font-size:56px;line-height:1}.sec-title span{color:#e8c400}
-.sec-sub{text-align:center;color:#aaa;margin:14px 0 42px;font-size:16px}
-.simulador{background:#111;border:2px solid #e8c400;border-radius:30px;padding:36px}
-.sim-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;margin-top:24px}
-.opt{border:2px solid #2a2a2a;background:#181818;padding:20px;border-radius:20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.prova{background:#111;border-bottom:1px solid #222;padding:26px 0}
+.prova-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.prova b{font-size:30px;color:#e8c400;display:block}.prova small{color:#aaa;font-size:12.5px}
+.sec-title{text-align:center;font-size:52px;line-height:1}.sec-title span{color:#e8c400}
+.sec-sub{text-align:center;color:#aaa;margin:12px 0 36px;font-size:15.5px}
+.simulador{background:#111;border:2px solid #e8c400;border-radius:26px;padding:30px}
+.sim-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;margin-top:20px}
+.opt{border:2px solid #2a2a2a;background:#181818;padding:18px;border-radius:18px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
 .opt.active{border-color:#e8c400;background:#262100}
-.opt b{font-size:17px}.opt small{display:block;color:#aaa;font-weight:400;font-size:13px}.opt span{color:#e8c400;font-weight:900;font-size:18px;white-space:nowrap}
-.total-box{background:#e8c400;color:#000;border-radius:22px;padding:28px;text-align:center}
-.total-box .total{font-size:56px;font-weight:900;line-height:1;margin:8px 0}
-.total-box a{display:block;background:#000;color:#fff;margin-top:18px;padding:18px;border-radius:999px;font-weight:900;font-size:16px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#151515;border:1px solid #282828;border-radius:24px;overflow:hidden}
-.card img{width:100%;height:250px;object-fit:cover;display:block}
-.card-body{padding:24px}.card-body h3{font-size:30px}.card-body p{color:#aaa;font-size:14.5px;margin:10px 0 18px;min-height:44px}
+.opt b{font-size:16px}.opt small{display:block;color:#aaa;font-weight:400;font-size:13px}.opt span{color:#e8c400;font-weight:900;font-size:17px;white-space:nowrap}
+.total-box{background:#e8c400;color:#000;border-radius:20px;padding:26px;text-align:center}
+.total-box .total{font-size:52px;font-weight:900;line-height:1;margin:8px 0}
+.total-box a{display:block;background:#000;color:#fff;margin-top:16px;padding:17px;border-radius:999px;font-weight:900;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#151515;border:1px solid #282828;border-radius:22px;overflow:hidden}
+.card img{width:100%;height:240px;object-fit:cover;display:block}
+.card-body{padding:22px}.card-body h3{font-size:28px}.card-body p{color:#aaa;font-size:14px;margin:10px 0 16px;min-height:42px}
 .price{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.price b{font-size:30px;color:#e8c400}
-.price a{background:#fff;color:#000;padding:12px 18px;border-radius:999px;font-weight:900;font-size:13px;white-space:nowrap}
-.combo{background:linear-gradient(135deg,#f5d100,#a67c00);color:#000;border-radius:26px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap;margin-top:22px}
-.combo h3{font-size:40px;line-height:1}.combo a{background:#000;color:#fff;padding:16px 26px;border-radius:999px;font-weight:900}
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.gal img{width:100%;height:260px;object-fit:cover;border-radius:18px;display:block}
-.avals-box{background:#151515;border:1px solid #282828;border-radius:24px;padding:34px;text-align:center;min-height:200px}
-.avals-box p{font-size:20px;line-height:1.6;margin:16px 0}
-.dots{display:flex;justify-content:center;gap:10px;margin-top:18px}.dot{width:12px;height:12px;border-radius:50%;background:#333;cursor:pointer;padding:6px}.dot.on{background:#e8c400}
+.price b{font-size:28px;color:#e8c400}
+.price a{background:#fff;color:#000;padding:11px 16px;border-radius:999px;font-weight:900;font-size:13px;white-space:nowrap}
+.combo{background:linear-gradient(135deg,#f5d100,#a67c00);color:#000;border-radius:24px;padding:26px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:20px}
+.combo h3{font-size:36px;line-height:1}.combo a{background:#000;color:#fff;padding:15px 24px;border-radius:999px;font-weight:900}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gal img{width:100%;height:250px;object-fit:cover;border-radius:16px;display:block}
+.avals-box{background:#151515;border:1px solid #282828;border-radius:22px;padding:30px;text-align:center;min-height:190px}
+.avals-box p{font-size:19px;line-height:1.6;margin:14px 0}
+.dots{display:flex;justify-content:center;gap:10px;margin-top:16px}.dot{width:12px;height:12px;border-radius:50%;background:#333;cursor:pointer;padding:6px}.dot.on{background:#e8c400}
 .faq{max-width:780px;margin:0 auto}
-.faq-item{background:#151515;border:1px solid #282828;border-radius:18px;margin-bottom:12px;overflow:hidden}
-.faq-q{padding:20px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:16px;gap:12px}
-.faq-a{display:none;padding:0 22px 20px;color:#aaa;font-size:14.5px;line-height:1.6}
+.faq-item{background:#151515;border:1px solid #282828;border-radius:16px;margin-bottom:10px;overflow:hidden}
+.faq-q{padding:18px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:15.5px;gap:12px}
+.faq-a{display:none;padding:0 20px 18px;color:#aaa;font-size:14px;line-height:1.6}
 .faq-item.open .faq-a{display:block}.faq-item.open{border-color:#e8c400}
-.final{background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=3840&auto=format&fit=crop') center/cover;text-align:center;padding:90px 20px}
-.final h2{font-size:64px;line-height:.95}
-.hours{background:#111;border:1px solid #2a2a2a;border-radius:22px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px;text-align:left}
-.hours h3{font-size:24px;margin-bottom:10px}.hours p{color:#ccc;line-height:1.8}
+.final{background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=3840&auto=format&fit=crop') center/cover;text-align:center;padding:80px 20px}
+.final h2{font-size:60px;line-height:.95}
+.hours{background:#111;border:1px solid #2a2a2a;border-radius:20px;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px;text-align:left}
+.hours h3{font-size:22px;margin-bottom:8px}.hours p{color:#ccc;line-height:1.8}
 .moises{background:#0a0a0a;border-top:1px solid #2a2a2a;text-align:center}
-.moises-box{background:#151515;border:2px solid #e8c400;border-radius:28px;padding:36px 24px;max-width:700px;margin:0 auto}
-.moises-box h2{font-size:48px;line-height:1}.moises-box h2 span{color:#e8c400}
-.moises-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
-.btn-insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;padding:17px 28px;border-radius:999px;font-weight:900;font-size:16px;display:inline-block}
-.btn-zap2{background:#25D366;color:#fff;padding:17px 28px;border-radius:999px;font-weight:900;font-size:16px;display:inline-block}
-.float-wa{position:fixed;right:18px;bottom:18px;z-index:999;background:#25D366;color:#fff;padding:17px 22px;border-radius:999px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.55);font-size:15px}
-footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
-@media(max-width:780px){section{padding:64px 0}.grid,.sim-grid{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.prova-grid{grid-template-columns:1fr 1fr}.hours{grid-template-columns:1fr}.logo{font-size:24px}.btn-top{padding:11px 14px;font-size:12px}.final h2{font-size:48px}.sec-title{font-size:44px}.gal img{height:200px}.social-row{grid-template-columns:1fr}}
+.moises-box{background:#151515;border:2px solid #e8c400;border-radius:26px;padding:32px 22px;max-width:700px;margin:0 auto}
+.moises-box h2{font-size:44px;line-height:1}.moises-box h2 span{color:#e8c400}
+.moises-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.btn-insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;padding:15px 24px;border-radius:999px;font-weight:900;font-size:15px;display:inline-block}
+.btn-zap2{background:#25D366;color:#fff;padding:15px 24px;border-radius:999px;font-weight:900;font-size:15px;display:inline-block}
+.float-wa{position:fixed;right:16px;bottom:16px;z-index:900;background:#25D366;color:#fff;padding:14px 18px;border-radius:999px;font-weight:900;box-shadow:0 10px 26px rgba(0,0,0,.55);font-size:14px}
+footer{text-align:center;padding:26px;color:#777;font-size:13px;line-height:1.7}
+@media(max-width:780px){section{padding:56px 0}.grid,.sim-grid{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.prova-grid{grid-template-columns:1fr 1fr}.hours{grid-template-columns:1fr}.logo{font-size:24px}.btn-top{padding:11px 14px;font-size:12px}.final h2{font-size:46px}.sec-title{font-size:42px}.gal img{height:190px}.social-row{grid-template-columns:1fr 1fr}.social-card{padding:13px 12px}.social-card b{font-size:13.5px}.social-card small{font-size:11px}.social-card .ico{font-size:22px}}
 </style>
 </head>
 <body>
 
-<!-- INTRO -->
 <div id="intro">
 <div class="mini">✂️ RUA DOURADO • 180 • SÃO PAULO</div>
 <h1>BARBEARIA<br><span>ESTILO</span></h1>
@@ -133,26 +130,19 @@ footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
 <div class="urgente">⏰ ÚLTIMAS 3 VAGAS DE HOJE — Garanta a sua!</div>
 </div></div>
 
-<!-- NÃO FICA MAIS PRETO - SOCIAL + CUPOM INTERATIVO -->
 <div class="hero-bottom"><div class="container">
 <div class="social-row">
-<a class="social-card sc-insta" href="https://instagram.com/moises.sites" target="_blank"><span style="font-size:34px">📸</span><span><b>SEGUE NO INSTAGRAM</b><small>@moises.sites • Segue lá e fortalece!</small></span><span style="font-size:22px">→</span></a>
-<a class="social-card sc-zap" href="https://wa.me/5511986789954?text=Oi!%20Vim%20pelo%20site%20da%20barbearia!"><span style="font-size:34px">💬</span><span><b>CHAMA NO WHATSAPP</b><small>(11) 98678-9954 • Resposta em 2 min</small></span><span style="font-size:22px">→</span></a>
+<a class="social-card sc-insta" href="https://instagram.com/moises.sites" target="_blank"><span class="ico">📸</span><span><b>SEGUE NO INSTAGRAM</b><small>@moises.sites</small></span><span>→</span></a>
+<a class="social-card sc-zap" href="https://wa.me/5511986789954?text=Oi!%20Vim%20pelo%20site%20da%20barbearia!"><span class="ico">💬</span><span><b>CHAMA NO WHATSAPP</b><small>(11) 98678-9954</small></span><span>→</span></a>
 </div>
-<div class="cupom">
-<p style="font-weight:900;font-size:17px">🎁 TEM DESCONTO PRA VOCÊ HOJE!</p>
-<p style="color:#aaa;font-size:13px;margin:6px 0 14px">Toca no botão e revela seu cupom secreto</p>
-<button onclick="revelar()">🎲 REVELAR MEU DESCONTO</button>
-<div id="cupomCode"><p style="color:#ccc;font-size:13px">SEU CUPOM É:</p><b>ESTILO10</b><p style="color:#aaa;font-size:13px;margin-top:6px">Mostra esse código no WhatsApp e ganha R$ 10 OFF no Combo VIP!</p><a href="https://wa.me/5511986789954?text=Oi!%20Meu%20cupom%20%C3%A9%20ESTILO10%20-%20Quero%20meu%20desconto!" style="display:inline-block;background:#25D366;color:#fff;padding:13px 22px;border-radius:999px;font-weight:900;margin-top:12px">USAR MEU CUPOM NO ZAP →</a></div>
-</div>
-<div class="marquee"><span>✂️ CORTE SOCIAL R$30 &nbsp;•&nbsp; 🔥 DEGRADÊ R$40 &nbsp;•&nbsp; 🧔 BARBA R$25 &nbsp;•&nbsp; 💈 COMBO VIP R$60 &nbsp;•&nbsp; ✂️ CORTE SOCIAL R$30 &nbsp;•&nbsp; 🔥 DEGRADÊ R$40 &nbsp;•&nbsp; 🧔 BARBA R$25 &nbsp;•&nbsp; 💈 COMBO VIP R$60 &nbsp;•&nbsp;</span></div>
+<div class="marquee"><span>✂️ CORTE R$30 &nbsp;•&nbsp; 🔥 DEGRADÊ R$40 &nbsp;•&nbsp; 🧔 BARBA R$25 &nbsp;•&nbsp; 💈 COMBO VIP R$60 &nbsp;•&nbsp; ✂️ CORTE R$30 &nbsp;•&nbsp; 🔥 DEGRADÊ R$40 &nbsp;•&nbsp; 🧔 BARBA R$25 &nbsp;•&nbsp; 💈 COMBO VIP R$60 &nbsp;•&nbsp;</span></div>
 </div></div>
 
 <div class="prova"><div class="container prova-grid"><div><b>5.000+</b><small>Cortes feitos</small></div><div><b>4.9 ⭐</b><small>No Google</small></div><div><b>45 min</b><small>Tempo médio</small></div><div><b>100%</b><small>Satisfação</small></div></div></div>
 
 <section id="simulador"><div class="container">
 <h2 class="sec-title">MONTE SEU <span>COMBO</span></h2><p class="sec-sub">Toca nos serviços que tu quer 👇 O preço já calcula sozinho!</p>
-<div class="simulador"><h3 style="font-size:32px">1️⃣ ESCOLHE O QUE TU QUER:</h3><div class="sim-grid"><div>
+<div class="simulador"><h3 style="font-size:30px">1️⃣ ESCOLHE O QUE TU QUER:</h3><div class="sim-grid"><div>
 <div class="opt" data-price="30" onclick="toggle(this)"><div><b>✂️ Corte Social</b><small>Clássico e alinhado</small></div><span>R$ 30</span></div>
 <div class="opt" data-price="40" onclick="toggle(this)"><div><b>🔥 Degradê Navalhado</b><small>O mais pedido da casa</small></div><span>R$ 40</span></div>
 <div class="opt" data-price="25" onclick="toggle(this)"><div><b>🧔 Barba Terapia</b><small>Toalha quente + óleo</small></div><span>R$ 25</span></div>
@@ -190,7 +180,7 @@ footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
 <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Onde fica? <span>+</span></div><div class="faq-a">Rua Dourado, 180 - São Paulo - SP. Pertinho do metrô, fácil de estacionar.</div></div>
 </div></div></section>
 
-<div class="final"><h2>SEU HORÁRIO<br>ESTÁ TE ESPERANDO.</h2><p style="margin-top:14px;color:#ddd">Clica abaixo e garante seu corte de hoje. São só 2 cliques.</p><br><a class="btn-green" style="font-size:20px;padding:19px 34px" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20agora!">📲 QUERO AGENDAR AGORA</a>
+<div class="final"><h2>SEU HORÁRIO<br>ESTÁ TE ESPERANDO.</h2><p style="margin-top:14px;color:#ddd">Clica abaixo e garante seu corte de hoje. São só 2 cliques.</p><br><a class="btn-green" style="font-size:19px;padding:18px 32px" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20agora!">📲 QUERO AGENDAR AGORA</a>
 <div class="container"><div class="hours"><div><h3>📍 ONDE A GENTE ESTÁ</h3><p>Rua Dourado, 180 - São Paulo - SP<br>Perto do metrô • Fácil de estacionar</p><br><a href="https://www.google.com/maps/search/?api=1&query=Rua+Dourado+180+Sao+Paulo+SP" style="color:#e8c400;font-weight:900">→ COMO CHEGAR NO MAPS</a></div><div><h3>🕒 HORÁRIOS</h3><p>Seg a Sex: 9h às 20h<br>Sábado: 9h às 19h<br>Domingo: Fechado<br><br>📱 WhatsApp: (11) 98678-9954</p></div></div></div></div>
 
 <section class="moises"><div class="container"><div class="moises-box">
@@ -212,7 +202,6 @@ footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
 setTimeout(()=>{document.getElementById('introBar').style.width='100%'},100);
 function entrar(){document.getElementById('intro').classList.add('hide');setTimeout(()=>{document.getElementById('intro').style.display='none'},600);}
 setTimeout(entrar,5000);
-function revelar(){document.getElementById('cupomCode').style.display='block';}
 let avais=[
 {t:"Melhor degradê que já fizeram em mim. Não troco por nada!",n:"— Matheus S. • Degradê"},
 {t:"Agendei no WhatsApp em 1 minuto, cheguei e já cortaram. Top demais!",n:"— Gabriel R. • Corte Social"},
@@ -224,4 +213,4 @@ setInterval(()=>{showAval((ai+1)%3)},4500);
 function toggle(el){el.classList.toggle('active');let total=0;let nomes=[];document.querySelectorAll('.opt.active').forEach(o=>{total+=parseInt(o.dataset.price);nomes.push(o.querySelector('b').innerText)});let desconto=nomes.length>=2?10:0;let final=Math.max(0,total-desconto);document.getElementById('total').innerText='R$ '+final;document.getElementById('desc').innerText=desconto;document.getElementById('escolhidos').innerText=nomes.length?nomes.join(' + '):'Nenhum serviço escolhido ainda';document.getElementById('linkWa').href='https://wa.me/5511986789954?text='+encodeURIComponent('Oi! Quero agendar: '+nomes.join(' + ')+' - Total R$ '+final);}
 </script>
 </body>
-  </html>
+</html>
