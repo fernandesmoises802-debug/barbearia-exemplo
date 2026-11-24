@@ -7,65 +7,45 @@
 <meta name="description" content="Barbearia Estilo - Rua Dourado, 180 São Paulo. Monte seu combo, veja o preço e agende em 1 minuto.">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-/* ===== CORREÇÃO DO AZUL AO CLICAR + BUGS ===== */
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent!important;tap-highlight-color:transparent!important}
-a,button,div,img{outline:none!important;-webkit-touch-callout:none}
-a:focus,a:active,button:focus{outline:none!important;background-color:transparent}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent!important}
+a,button,div,img{outline:none!important}
 img{-webkit-user-drag:none;user-select:none}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:#070707;color:#fff;overflow-x:hidden;line-height:1.6}
 h1,h2,h3{font-family:'Bebas Neue',sans-serif;letter-spacing:1.2px}
 a{text-decoration:none;color:inherit}
 .container{max-width:1140px;margin:0 auto;padding:0 24px}
 section{padding:84px 0}
-
-/* TOPO */
-.topbar{background:#e8c400;color:#000;text-align:center;padding:11px 14px;font-weight:900;font-size:13px;letter-spacing:.2px}
+.topbar{background:#e8c400;color:#000;text-align:center;padding:11px 14px;font-weight:900;font-size:13px}
 header{position:sticky;top:0;z-index:100;background:rgba(7,7,7,.96);backdrop-filter:blur(14px);border-bottom:1px solid #1f1f1f}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:16px}
 .logo{font-size:30px;color:#e8c400;line-height:.95}.logo span{color:#fff}.logo small{display:block;font-family:'Inter';font-size:9px;letter-spacing:4px;color:#999;margin-top:4px}
-.btn-top{background:#25D366;color:#fff;padding:13px 20px;border-radius:999px;font-weight:900;font-size:13px;box-shadow:0 6px 20px rgba(37,211,102,.35);white-space:nowrap;transition:.2s}
-.btn-top:active{transform:scale(.96)}
-
-/* HERO 4K */
-.hero{position:relative;min-height:96vh;display:flex;align-items:center;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.75) 60%,#070707 100%),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=3840&auto=format&fit=crop') center/cover;padding:60px 0}
-.hero h1{font-size:clamp(58px,11vw,124px);line-height:.88;text-shadow:0 4px 30px rgba(0,0,0,.7)}
+.btn-top{background:#25D366;color:#fff;padding:13px 20px;border-radius:999px;font-weight:900;font-size:13px;white-space:nowrap}
+.hero{position:relative;min-height:96vh;display:flex;align-items:center;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.75) 60%,#070707),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=3840&auto=format&fit=crop') center/cover;padding:60px 0}
+.hero h1{font-size:clamp(58px,11vw,124px);line-height:.88}
 .hero h1 em{color:#e8c400;font-style:normal}
 .hero p{font-size:19px;color:#e8e8e8;max-width:640px;margin:22px 0 28px}
 .badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
-.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:10px 15px;border-radius:999px;font-size:12.5px;font-weight:700;backdrop-filter:blur(8px)}
+.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:10px 15px;border-radius:999px;font-size:12.5px;font-weight:700}
 .btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn-green{background:#25D366;color:#fff;padding:19px 30px;border-radius:999px;font-weight:900;font-size:17px;box-shadow:0 12px 32px rgba(37,211,102,.35);display:inline-block;transition:.2s}
-.btn-green:active{transform:scale(.97)}
+.btn-green{background:#25D366;color:#fff;padding:19px 30px;border-radius:999px;font-weight:900;font-size:17px;box-shadow:0 12px 32px rgba(37,211,102,.35);display:inline-block}
 .btn-ghost{border:2px solid #e8c400;color:#e8c400;padding:17px 26px;border-radius:999px;font-weight:900;display:inline-block}
 .urgente{margin-top:22px;background:#ff2d2d;color:#fff;display:inline-block;padding:10px 16px;border-radius:999px;font-weight:800;font-size:13px}
-.aviso{margin-top:14px;color:#bbb;font-size:13px}
-
-/* PROVA */
 .prova{background:#111;border-bottom:1px solid #222;padding:30px 0}
 .prova-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
 .prova b{font-size:32px;color:#e8c400;display:block}.prova small{color:#aaa;font-size:13px}
-
-/* TÍTULOS */
 .sec-title{text-align:center;font-size:56px;line-height:1}.sec-title span{color:#e8c400}
 .sec-sub{text-align:center;color:#aaa;margin:14px 0 42px;font-size:16px}
-
-/* SIMULADOR */
-.simulador{background:#111;border:2px solid #e8c400;border-radius:30px;padding:36px;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.simulador{background:#111;border:2px solid #e8c400;border-radius:30px;padding:36px}
 .sim-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;margin-top:24px}
-.opt{border:2px solid #2a2a2a;background:#181818;padding:20px;border-radius:20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;transition:.2s}
-.opt:active{transform:scale(.98)}
+.opt{border:2px solid #2a2a2a;background:#181818;padding:20px;border-radius:20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
 .opt.active{border-color:#e8c400;background:#262100}
 .opt b{font-size:17px}.opt small{display:block;color:#aaa;font-weight:400;font-size:13px}.opt span{color:#e8c400;font-weight:900;font-size:18px;white-space:nowrap}
-.total-box{background:#e8c400;color:#000;border-radius:22px;padding:28px;text-align:center;position:sticky;top:100px}
+.total-box{background:#e8c400;color:#000;border-radius:22px;padding:28px;text-align:center}
 .total-box .total{font-size:56px;font-weight:900;line-height:1;margin:8px 0}
 .total-box a{display:block;background:#000;color:#fff;margin-top:18px;padding:18px;border-radius:999px;font-weight:900;font-size:16px}
-.total-box a:active{transform:scale(.97)}
-
-/* CARDS */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#151515;border:1px solid #282828;border-radius:24px;overflow:hidden;transition:.3s}
-.card:active{transform:scale(.98)}
+.card{background:#151515;border:1px solid #282828;border-radius:24px;overflow:hidden}
 .card img{width:100%;height:250px;object-fit:cover;display:block}
 .card-body{padding:24px}.card-body h3{font-size:30px}.card-body p{color:#aaa;font-size:14.5px;margin:10px 0 18px;min-height:44px}
 .price{display:flex;justify-content:space-between;align-items:center;gap:10px}
@@ -73,48 +53,30 @@ header{position:sticky;top:0;z-index:100;background:rgba(7,7,7,.96);backdrop-fil
 .price a{background:#fff;color:#000;padding:12px 18px;border-radius:999px;font-weight:900;font-size:13px;white-space:nowrap}
 .combo{background:linear-gradient(135deg,#f5d100,#a67c00);color:#000;border-radius:26px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap;margin-top:22px}
 .combo h3{font-size:40px;line-height:1}.combo a{background:#000;color:#fff;padding:16px 26px;border-radius:999px;font-weight:900}
-
-/* GALERIA */
-.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.gal img{width:100%;height:240px;object-fit:cover;border-radius:18px;display:block}
-.before-after{position:relative;border-radius:26px;overflow:hidden;height:400px;margin-top:24px;background:#000;touch-action:none;cursor:ew-resize}
-.before-after img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
-#afterImg{clip-path:inset(0 50% 0 0)}
-.ba-handle{position:absolute;top:0;bottom:0;left:50%;width:4px;background:#e8c400;z-index:2;pointer-events:none}
-.ba-handle:after{content:'◀ ▶';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#e8c400;color:#000;padding:11px 13px;border-radius:999px;font-weight:900;font-size:12px;white-space:nowrap;box-shadow:0 5px 20px rgba(0,0,0,.5)}
-.ba-label{position:absolute;top:16px;padding:8px 14px;border-radius:999px;font-size:12px;font-weight:900;z-index:3;background:rgba(0,0,0,.75);pointer-events:none}
-
-/* AVALIAÇÕES */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.gal img{width:100%;height:260px;object-fit:cover;border-radius:18px;display:block}
 .avals-box{background:#151515;border:1px solid #282828;border-radius:24px;padding:34px;text-align:center;min-height:200px}
 .avals-box p{font-size:20px;line-height:1.6;margin:16px 0}
 .dots{display:flex;justify-content:center;gap:10px;margin-top:18px}.dot{width:12px;height:12px;border-radius:50%;background:#333;cursor:pointer;padding:6px}.dot.on{background:#e8c400}
-
-/* FAQ */
 .faq{max-width:780px;margin:0 auto}
 .faq-item{background:#151515;border:1px solid #282828;border-radius:18px;margin-bottom:12px;overflow:hidden}
 .faq-q{padding:20px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:16px;gap:12px}
 .faq-a{display:none;padding:0 22px 20px;color:#aaa;font-size:14.5px;line-height:1.6}
 .faq-item.open .faq-a{display:block}.faq-item.open{border-color:#e8c400}
-
-/* FINAL */
 .final{background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=3840&auto=format&fit=crop') center/cover;text-align:center;padding:90px 20px}
 .final h2{font-size:64px;line-height:.95}
 .hours{background:#111;border:1px solid #2a2a2a;border-radius:22px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px;text-align:left}
 .hours h3{font-size:24px;margin-bottom:10px}.hours p{color:#ccc;line-height:1.8}
+/* SEÇÃO MOISÉS SITES */
+.moises{background:linear-gradient(135deg,#1a1a1a,#0a0a0a);border-top:1px solid #2a2a2a;border-bottom:1px solid #2a2a2a;text-align:center}
+.moises-box{background:#151515;border:2px solid #e8c400;border-radius:28px;padding:36px 24px;max-width:700px;margin:0 auto}
+.moises-box h2{font-size:48px;line-height:1}.moises-box h2 span{color:#e8c400}
+.moises-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.btn-insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;padding:17px 28px;border-radius:999px;font-weight:900;font-size:16px;display:inline-block}
+.btn-zap2{background:#25D366;color:#fff;padding:17px 28px;border-radius:999px;font-weight:900;font-size:16px;display:inline-block}
 .float-wa{position:fixed;right:18px;bottom:18px;z-index:999;background:#25D366;color:#fff;padding:17px 22px;border-radius:999px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.55);font-size:15px}
 footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
-@media(max-width:780px){
-  section{padding:64px 0}
-  .grid,.sim-grid{grid-template-columns:1fr}
-  .gal{grid-template-columns:1fr 1fr}
-  .prova-grid{grid-template-columns:1fr 1fr}
-  .hours{grid-template-columns:1fr}
-  .logo{font-size:24px}.btn-top{padding:11px 14px;font-size:12px}
-  .total-box{position:static}
-  .before-after{height:340px}
-  .final h2{font-size:48px}
-  .sec-title{font-size:44px}
-}
+@media(max-width:780px){section{padding:64px 0}.grid,.sim-grid{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.prova-grid{grid-template-columns:1fr 1fr}.hours{grid-template-columns:1fr}.logo{font-size:24px}.btn-top{padding:11px 14px;font-size:12px}.final h2{font-size:48px}.sec-title{font-size:44px}.gal img{height:200px}}
 </style>
 </head>
 <body>
@@ -127,7 +89,6 @@ footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
 <p>Degradê na navalha, barba alinhada e atendimento de primeira. Você entra cliente e sai com presença.</p>
 <div class="btns"><a class="btn-green" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20meu%20corte!">📲 AGENDAR NO WHATSAPP</a><a class="btn-ghost" href="#simulador">MONTAR MEU COMBO ↓</a></div>
 <div class="urgente">⏰ ÚLTIMAS 3 VAGAS DE HOJE — Garanta a sua!</div>
-<div class="aviso">✅ Resposta em menos de 2 minutos no WhatsApp</div>
 </div></div>
 
 <div class="prova"><div class="container prova-grid"><div><b>5.000+</b><small>Cortes feitos</small></div><div><b>4.9 ⭐</b><small>No Google</small></div><div><b>45 min</b><small>Tempo médio</small></div><div><b>100%</b><small>Satisfação</small></div></div></div>
@@ -140,9 +101,8 @@ footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
 <div class="opt" data-price="25" onclick="toggle(this)"><div><b>🧔 Barba Terapia</b><small>Toalha quente + óleo</small></div><span>R$ 25</span></div>
 <div class="opt" data-price="15" onclick="toggle(this)"><div><b>👁️ Sobrancelha</b><small>Alinhada na navalha</small></div><span>R$ 15</span></div>
 <div class="opt" data-price="20" onclick="toggle(this)"><div><b>✨ Pigmentação</b><small>Cobertura perfeita</small></div><span>R$ 20</span></div>
-<div class="opt" data-price="35" onclick="toggle(this)"><div><b>💈 Corte + Pigmentação</b><small>Combo completo</small></div><span>R$ 35</span></div>
 </div>
-<div class="total-box"><h3>SEU TOTAL É:</h3><div class="total" id="total">R$ 0</div><p id="escolhidos" style="font-weight:700;line-height:1.5">Nenhum serviço escolhido ainda</p><p style="font-size:13px;margin-top:10px">💰 Você economiza R$ <span id="desc">0</span> no combo</p><a id="linkWa" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar!">📲 AGENDAR ESSE COMBO →</a><p style="font-size:12px;margin-top:10px;color:#333;font-weight:700">Sem compromisso • Resposta rápida</p></div></div></div>
+<div class="total-box"><h3>SEU TOTAL É:</h3><div class="total" id="total">R$ 0</div><p id="escolhidos" style="font-weight:700;line-height:1.5">Nenhum serviço escolhido ainda</p><p style="font-size:13px;margin-top:10px">💰 Você economiza R$ <span id="desc">0</span> no combo</p><a id="linkWa" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar!">📲 AGENDAR ESSE COMBO →</a></div></div></div>
 </div></section>
 
 <section id="precos" style="padding-top:0"><div class="container">
@@ -155,19 +115,12 @@ footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
 <div class="combo"><div><h3>COMBO VIP: CORTE + BARBA</h3><p><b>De R$ 65 por R$ 60</b> • + Sobrancelha grátis hoje</p></div><a href="https://wa.me/5511986789954?text=Quero%20o%20COMBO%20VIP">QUERO O COMBO VIP →</a></div>
 </div></section>
 
-<section style="padding-top:0"><div class="container"><h2 class="sec-title">ANTES / <span>DEPOIS</span></h2><p class="sec-sub">Arrasta a barrinha amarela pro lado 👉 e vê a mágica!</p>
-<div class="before-after" id="baBox">
-<img src="https://images.unsplash.com/photo-1521490878406-447a1c5f5b9b?q=80&w=1600&auto=format&fit=crop">
-<img id="afterImg" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1600&auto=format&fit=crop">
-<span class="ba-label" style="left:14px">ANTES</span><span class="ba-label" style="right:14px;background:#e8c400;color:#000">DEPOIS</span>
-<div class="ba-handle" id="baHandle"></div>
-</div>
-<h2 class="sec-title" style="margin-top:64px">TRABALHOS <span>REAIS</span></h2><p class="sec-sub">Sem filtro. É assim que tu vai sair daqui.</p>
+<section style="padding-top:0"><div class="container"><h2 class="sec-title">TRABALHOS <span>REAIS</span></h2><p class="sec-sub">Sem filtro. É assim que tu vai sair daqui.</p>
 <div class="gal">
 <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop">
 <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop">
-<img src="https://images.unsplash.com/photo-1521490878406-447a1c5f5b9b?q=80&w=1200&auto=format&fit=crop">
 <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop">
 </div></div></section>
 
 <section style="padding-top:0"><div class="container"><h2 class="sec-title">QUEM CORTOU, <span>APROVA</span></h2>
@@ -183,8 +136,20 @@ footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
 <div class="final"><h2>SEU HORÁRIO<br>ESTÁ TE ESPERANDO.</h2><p style="margin-top:14px;color:#ddd">Clica abaixo e garante seu corte de hoje. São só 2 cliques.</p><br><a class="btn-green" style="font-size:20px;padding:19px 34px" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20agora!">📲 QUERO AGENDAR AGORA</a>
 <div class="container"><div class="hours"><div><h3>📍 ONDE A GENTE ESTÁ</h3><p>Rua Dourado, 180 - São Paulo - SP<br>Perto do metrô • Fácil de estacionar</p><br><a href="https://www.google.com/maps/search/?api=1&query=Rua+Dourado+180+Sao+Paulo+SP" style="color:#e8c400;font-weight:900">→ COMO CHEGAR NO MAPS</a></div><div><h3>🕒 HORÁRIOS</h3><p>Seg a Sex: 9h às 20h<br>Sábado: 9h às 19h<br>Domingo: Fechado<br><br>📱 WhatsApp: (11) 98678-9954</p></div></div></div></div>
 
+<section class="moises"><div class="container"><div class="moises-box">
+<p style="color:#e8c400;font-weight:900;letter-spacing:2px;font-size:13px">✨ QUER UM SITE ASSIM PRA SUA EMPRESA?</p>
+<h2 style="margin-top:10px">FEITO POR <span>MOISÉS SITES</span></h2>
+<p style="color:#ccc;margin-top:14px">Se você tem barbearia, salão, loja ou qualquer negócio e quer um site que vende 24h por dia igual esse, fala comigo!</p>
+<p style="margin-top:10px;font-weight:800">📱 (11) 98678-9954 • @moises.sites</p>
+<div class="moises-btns">
+<a class="btn-insta" href="https://instagram.com/moises.sites" target="_blank">📸 SEGUIR NO INSTAGRAM @moises.sites</a>
+<a class="btn-zap2" href="https://wa.me/5511986789954?text=Oi%20Mois%C3%A9s!%20Vi%20o%20site%20da%20barbearia%20e%20quero%20um%20site%20pra%20minha%20empresa!">💬 QUERO UM SITE ASSIM NO WHATSAPP</a>
+</div>
+<p style="color:#888;font-size:13px;margin-top:18px">Site por R$ 150 • Pronto amanhã • Só paga depois de aprovar</p>
+</div></div></section>
+
 <a class="float-wa" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar!">💬 Agendar</a>
-<footer>© 2026 Barbearia Estilo • Rua Dourado, 180 - São Paulo<br>Feito por Moisés Sites • Siga no Instagram @barbeariaestilo</footer>
+<footer>© 2026 Barbearia Estilo • Rua Dourado, 180 - São Paulo<br>Site feito por <a href="https://instagram.com/moises.sites" style="color:#e8c400;font-weight:800">@moises.sites</a> • WhatsApp (11) 98678-9954</footer>
 
 <script>
 let avais=[
@@ -196,11 +161,6 @@ let ai=0;
 function showAval(i){ai=i;document.getElementById('avalText').innerText='"'+avais[i].t+'"';document.getElementById('avalName').innerText=avais[i].n;document.querySelectorAll('.dot').forEach((d,idx)=>d.classList.toggle('on',idx===i));}
 setInterval(()=>{showAval((ai+1)%3)},4500);
 function toggle(el){el.classList.toggle('active');let total=0;let nomes=[];document.querySelectorAll('.opt.active').forEach(o=>{total+=parseInt(o.dataset.price);nomes.push(o.querySelector('b').innerText)});let desconto=nomes.length>=2?10:0;let final=Math.max(0,total-desconto);document.getElementById('total').innerText='R$ '+final;document.getElementById('desc').innerText=desconto;document.getElementById('escolhidos').innerText=nomes.length?nomes.join(' + '):'Nenhum serviço escolhido ainda';document.getElementById('linkWa').href='https://wa.me/5511986789954?text='+encodeURIComponent('Oi! Quero agendar: '+nomes.join(' + ')+' - Total R$ '+final);}
-let baBox=document.getElementById('baBox');
-function moveBa(e){let r=baBox.getBoundingClientRect();let clientX=e.touches?e.touches[0].clientX:e.clientX;let x=clientX-r.left;let pct=Math.max(5,Math.min(95,x/r.width*100));document.getElementById('afterImg').style.clipPath='inset(0 '+(100-pct)+'% 0 0)';document.getElementById('baHandle').style.left=pct+'%';}
-baBox.addEventListener('mousemove',moveBa);
-baBox.addEventListener('touchmove',function(e){e.preventDefault();moveBa(e)},{passive:false});
-baBox.addEventListener('touchstart',moveBa);
 </script>
 </body>
 </html>
