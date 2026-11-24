@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>BARBEARIA ESTILO — Rua Dourado, 180 | Experiência Premium</title>
-<meta name="description" content="Barbearia Estilo - Rua Dourado, 180 São Paulo. Monte seu combo, veja o preço e agende em 1 minuto.">
+<title>BARBEARIA ESTILO — Rua Dourado, 180</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent!important}
@@ -16,12 +15,29 @@ h1,h2,h3{font-family:'Bebas Neue',sans-serif;letter-spacing:1.2px}
 a{text-decoration:none;color:inherit}
 .container{max-width:1140px;margin:0 auto;padding:0 24px}
 section{padding:84px 0}
+
+/* ===== INTRO ===== */
+#intro{position:fixed;inset:0;z-index:9999;background:radial-gradient(circle at 50% 30%,#2a2200,#070707 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:.6s}
+#intro.hide{opacity:0;pointer-events:none;transform:scale(1.05)}
+#intro .mini{letter-spacing:5px;font-size:11px;color:#e8c400;font-weight:900}
+#intro h1{font-size:clamp(60px,14vw,110px);line-height:.9;margin:14px 0}
+#intro h1 span{color:#e8c400}
+#intro p{color:#ccc;max-width:420px}
+#intro .bar{width:200px;height:4px;background:#222;border-radius:99px;margin:24px 0;overflow:hidden}
+#intro .bar i{display:block;height:100%;width:0;background:#e8c400;transition:1.2s}
+.btn-entrar{background:#e8c400;color:#000;padding:18px 40px;border-radius:999px;font-weight:900;font-size:18px;margin-top:6px;cursor:pointer;border:none}
+.btn-entrar:active{transform:scale(.97)}
+.pular{margin-top:16px;color:#888;font-size:13px;cursor:pointer}
+
+/* TOPO */
 .topbar{background:#e8c400;color:#000;text-align:center;padding:11px 14px;font-weight:900;font-size:13px}
 header{position:sticky;top:0;z-index:100;background:rgba(7,7,7,.96);backdrop-filter:blur(14px);border-bottom:1px solid #1f1f1f}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:16px}
 .logo{font-size:30px;color:#e8c400;line-height:.95}.logo span{color:#fff}.logo small{display:block;font-family:'Inter';font-size:9px;letter-spacing:4px;color:#999;margin-top:4px}
 .btn-top{background:#25D366;color:#fff;padding:13px 20px;border-radius:999px;font-weight:900;font-size:13px;white-space:nowrap}
-.hero{position:relative;min-height:96vh;display:flex;align-items:center;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.75) 60%,#070707),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=3840&auto=format&fit=crop') center/cover;padding:60px 0}
+
+/* HERO */
+.hero{position:relative;display:flex;align-items:center;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.72) 55%,#070707),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=3840&auto=format&fit=crop') center/cover;padding:50px 0 0}
 .hero h1{font-size:clamp(58px,11vw,124px);line-height:.88}
 .hero h1 em{color:#e8c400;font-style:normal}
 .hero p{font-size:19px;color:#e8e8e8;max-width:640px;margin:22px 0 28px}
@@ -31,6 +47,22 @@ header{position:sticky;top:0;z-index:100;background:rgba(7,7,7,.96);backdrop-fil
 .btn-green{background:#25D366;color:#fff;padding:19px 30px;border-radius:999px;font-weight:900;font-size:17px;box-shadow:0 12px 32px rgba(37,211,102,.35);display:inline-block}
 .btn-ghost{border:2px solid #e8c400;color:#e8c400;padding:17px 26px;border-radius:999px;font-weight:900;display:inline-block}
 .urgente{margin-top:22px;background:#ff2d2d;color:#fff;display:inline-block;padding:10px 16px;border-radius:999px;font-weight:800;font-size:13px}
+
+/* ===== FIM DO PRETO - SOCIAL + CUPOM ===== */
+.hero-bottom{background:linear-gradient(180deg,#070707,#111);padding:26px 0 34px;border-bottom:1px solid #222}
+.social-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.social-card{border-radius:20px;padding:20px;display:flex;align-items:center;gap:14px;text-align:left}
+.social-card b{font-size:18px;display:block}.social-card small{color:#eee;opacity:.9}
+.sc-insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.sc-zap{background:#25D366}
+.cupom{margin-top:16px;background:#1a1a1a;border:2px dashed #e8c400;border-radius:20px;padding:20px;text-align:center}
+.cupom button{background:#e8c400;color:#000;border:none;padding:14px 24px;border-radius:999px;font-weight:900;font-size:15px;cursor:pointer}
+#cupomCode{display:none;margin-top:14px}
+#cupomCode b{font-size:30px;color:#e8c400;letter-spacing:3px}
+.marquee{overflow:hidden;white-space:nowrap;margin-top:18px;color:#e8c400;font-weight:900;letter-spacing:1px}
+.marquee span{display:inline-block;animation:mq 18s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+
 .prova{background:#111;border-bottom:1px solid #222;padding:30px 0}
 .prova-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
 .prova b{font-size:32px;color:#e8c400;display:block}.prova small{color:#aaa;font-size:13px}
@@ -67,8 +99,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(7,7,7,.96);backdrop-fil
 .final h2{font-size:64px;line-height:.95}
 .hours{background:#111;border:1px solid #2a2a2a;border-radius:22px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px;text-align:left}
 .hours h3{font-size:24px;margin-bottom:10px}.hours p{color:#ccc;line-height:1.8}
-/* SEÇÃO MOISÉS SITES */
-.moises{background:linear-gradient(135deg,#1a1a1a,#0a0a0a);border-top:1px solid #2a2a2a;border-bottom:1px solid #2a2a2a;text-align:center}
+.moises{background:#0a0a0a;border-top:1px solid #2a2a2a;text-align:center}
 .moises-box{background:#151515;border:2px solid #e8c400;border-radius:28px;padding:36px 24px;max-width:700px;margin:0 auto}
 .moises-box h2{font-size:48px;line-height:1}.moises-box h2 span{color:#e8c400}
 .moises-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
@@ -76,10 +107,21 @@ header{position:sticky;top:0;z-index:100;background:rgba(7,7,7,.96);backdrop-fil
 .btn-zap2{background:#25D366;color:#fff;padding:17px 28px;border-radius:999px;font-weight:900;font-size:16px;display:inline-block}
 .float-wa{position:fixed;right:18px;bottom:18px;z-index:999;background:#25D366;color:#fff;padding:17px 22px;border-radius:999px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.55);font-size:15px}
 footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
-@media(max-width:780px){section{padding:64px 0}.grid,.sim-grid{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.prova-grid{grid-template-columns:1fr 1fr}.hours{grid-template-columns:1fr}.logo{font-size:24px}.btn-top{padding:11px 14px;font-size:12px}.final h2{font-size:48px}.sec-title{font-size:44px}.gal img{height:200px}}
+@media(max-width:780px){section{padding:64px 0}.grid,.sim-grid{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.prova-grid{grid-template-columns:1fr 1fr}.hours{grid-template-columns:1fr}.logo{font-size:24px}.btn-top{padding:11px 14px;font-size:12px}.final h2{font-size:48px}.sec-title{font-size:44px}.gal img{height:200px}.social-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+
+<!-- INTRO -->
+<div id="intro">
+<div class="mini">✂️ RUA DOURADO • 180 • SÃO PAULO</div>
+<h1>BARBEARIA<br><span>ESTILO</span></h1>
+<p>Seu corte com cara de empresário. Degradê, barba e estilo em 45 minutos.</p>
+<div class="bar"><i id="introBar"></i></div>
+<button class="btn-entrar" onclick="entrar()">ENTRAR NO SITE →</button>
+<div class="pular" onclick="entrar()">Pular intro</div>
+</div>
+
 <div class="topbar">🔥 HOJE TEM HORÁRIO LIVRE NA RUA DOURADO, 180 • AGENDE EM 1 MINUTO • SÓ 3 VAGAS HOJE</div>
 <header><div class="container nav"><div class="logo">BARBEARIA <span>ESTILO</span><small>RUA DOURADO • 180 • SÃO PAULO</small></div><a class="btn-top" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20meu%20corte!">📱 Agendar Agora</a></div></header>
 
@@ -89,6 +131,21 @@ footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
 <p>Degradê na navalha, barba alinhada e atendimento de primeira. Você entra cliente e sai com presença.</p>
 <div class="btns"><a class="btn-green" href="https://wa.me/5511986789954?text=Oi!%20Quero%20agendar%20meu%20corte!">📲 AGENDAR NO WHATSAPP</a><a class="btn-ghost" href="#simulador">MONTAR MEU COMBO ↓</a></div>
 <div class="urgente">⏰ ÚLTIMAS 3 VAGAS DE HOJE — Garanta a sua!</div>
+</div></div>
+
+<!-- NÃO FICA MAIS PRETO - SOCIAL + CUPOM INTERATIVO -->
+<div class="hero-bottom"><div class="container">
+<div class="social-row">
+<a class="social-card sc-insta" href="https://instagram.com/moises.sites" target="_blank"><span style="font-size:34px">📸</span><span><b>SEGUE NO INSTAGRAM</b><small>@moises.sites • Segue lá e fortalece!</small></span><span style="font-size:22px">→</span></a>
+<a class="social-card sc-zap" href="https://wa.me/5511986789954?text=Oi!%20Vim%20pelo%20site%20da%20barbearia!"><span style="font-size:34px">💬</span><span><b>CHAMA NO WHATSAPP</b><small>(11) 98678-9954 • Resposta em 2 min</small></span><span style="font-size:22px">→</span></a>
+</div>
+<div class="cupom">
+<p style="font-weight:900;font-size:17px">🎁 TEM DESCONTO PRA VOCÊ HOJE!</p>
+<p style="color:#aaa;font-size:13px;margin:6px 0 14px">Toca no botão e revela seu cupom secreto</p>
+<button onclick="revelar()">🎲 REVELAR MEU DESCONTO</button>
+<div id="cupomCode"><p style="color:#ccc;font-size:13px">SEU CUPOM É:</p><b>ESTILO10</b><p style="color:#aaa;font-size:13px;margin-top:6px">Mostra esse código no WhatsApp e ganha R$ 10 OFF no Combo VIP!</p><a href="https://wa.me/5511986789954?text=Oi!%20Meu%20cupom%20%C3%A9%20ESTILO10%20-%20Quero%20meu%20desconto!" style="display:inline-block;background:#25D366;color:#fff;padding:13px 22px;border-radius:999px;font-weight:900;margin-top:12px">USAR MEU CUPOM NO ZAP →</a></div>
+</div>
+<div class="marquee"><span>✂️ CORTE SOCIAL R$30 &nbsp;•&nbsp; 🔥 DEGRADÊ R$40 &nbsp;•&nbsp; 🧔 BARBA R$25 &nbsp;•&nbsp; 💈 COMBO VIP R$60 &nbsp;•&nbsp; ✂️ CORTE SOCIAL R$30 &nbsp;•&nbsp; 🔥 DEGRADÊ R$40 &nbsp;•&nbsp; 🧔 BARBA R$25 &nbsp;•&nbsp; 💈 COMBO VIP R$60 &nbsp;•&nbsp;</span></div>
 </div></div>
 
 <div class="prova"><div class="container prova-grid"><div><b>5.000+</b><small>Cortes feitos</small></div><div><b>4.9 ⭐</b><small>No Google</small></div><div><b>45 min</b><small>Tempo médio</small></div><div><b>100%</b><small>Satisfação</small></div></div></div>
@@ -152,6 +209,10 @@ footer{text-align:center;padding:28px;color:#777;font-size:13px;line-height:1.7}
 <footer>© 2026 Barbearia Estilo • Rua Dourado, 180 - São Paulo<br>Site feito por <a href="https://instagram.com/moises.sites" style="color:#e8c400;font-weight:800">@moises.sites</a> • WhatsApp (11) 98678-9954</footer>
 
 <script>
+setTimeout(()=>{document.getElementById('introBar').style.width='100%'},100);
+function entrar(){document.getElementById('intro').classList.add('hide');setTimeout(()=>{document.getElementById('intro').style.display='none'},600);}
+setTimeout(entrar,5000);
+function revelar(){document.getElementById('cupomCode').style.display='block';}
 let avais=[
 {t:"Melhor degradê que já fizeram em mim. Não troco por nada!",n:"— Matheus S. • Degradê"},
 {t:"Agendei no WhatsApp em 1 minuto, cheguei e já cortaram. Top demais!",n:"— Gabriel R. • Corte Social"},
@@ -163,4 +224,4 @@ setInterval(()=>{showAval((ai+1)%3)},4500);
 function toggle(el){el.classList.toggle('active');let total=0;let nomes=[];document.querySelectorAll('.opt.active').forEach(o=>{total+=parseInt(o.dataset.price);nomes.push(o.querySelector('b').innerText)});let desconto=nomes.length>=2?10:0;let final=Math.max(0,total-desconto);document.getElementById('total').innerText='R$ '+final;document.getElementById('desc').innerText=desconto;document.getElementById('escolhidos').innerText=nomes.length?nomes.join(' + '):'Nenhum serviço escolhido ainda';document.getElementById('linkWa').href='https://wa.me/5511986789954?text='+encodeURIComponent('Oi! Quero agendar: '+nomes.join(' + ')+' - Total R$ '+final);}
 </script>
 </body>
-</html>
+  </html>
